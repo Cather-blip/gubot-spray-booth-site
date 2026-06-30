@@ -23,7 +23,7 @@ jobs:
 
       - name: Sync files to SiteGround public_html
         run: |
-          rsync -az --delete \
+          rsync -az \
             --exclude=".git/" \
             --exclude=".github/" \
             --exclude=".DS_Store" \
@@ -33,4 +33,3 @@ jobs:
             --exclude="image-credits.md" \
             -e "ssh -i ~/.ssh/siteground_key -p ${{ secrets.SITEGROUND_PORT }}" \
             ./ "${{ secrets.SITEGROUND_USER }}@${{ secrets.SITEGROUND_HOST }}:${{ secrets.SITEGROUND_PATH }}"
-
