@@ -1,0 +1,18 @@
+.DS_Store
+**/.DS_Store
+
+# Local review screenshots and temporary extraction files
+design-qa*.png
+design-qa.md
+tmp/
+
+# Local-only packaging artifacts
+*.zip
+
+# Original source folders; optimized website assets are stored in SEO-friendly folders
+assets/产品图片/
+assets/客户安装案例/
+assets/展会/
+assets/工厂照片/
+assets/customer-visits/*.jpeg
+assets/customer-visits/法国.jpg

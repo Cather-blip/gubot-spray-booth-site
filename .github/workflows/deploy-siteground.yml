@@ -1,0 +1,36 @@
+name: Deploy website to SiteGround
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout website files
+        uses: actions/checkout@v4
+
+      - name: Prepare SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SITEGROUND_SSH_KEY }}" > ~/.ssh/siteground_key
+          chmod 600 ~/.ssh/siteground_key
+          ssh-keyscan -p "${{ secrets.SITEGROUND_PORT }}" "${{ secrets.SITEGROUND_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Sync files to SiteGround public_html
+        run: |
+          rsync -az --delete \
+            --exclude=".git/" \
+            --exclude=".github/" \
+            --exclude=".DS_Store" \
+            --exclude="tmp/" \
+            --exclude="design-qa*.png" \
+            --exclude="design-qa.md" \
+            --exclude="image-credits.md" \
+            -e "ssh -i ~/.ssh/siteground_key -p ${{ secrets.SITEGROUND_PORT }}" \
+            ./ "${{ secrets.SITEGROUND_USER }}@${{ secrets.SITEGROUND_HOST }}:${{ secrets.SITEGROUND_PATH }}"
+
