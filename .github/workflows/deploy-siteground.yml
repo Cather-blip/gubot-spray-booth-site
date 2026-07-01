@@ -33,3 +33,9 @@ jobs:
             --exclude="image-credits.md" \
             -e "ssh -i ~/.ssh/siteground_key -p ${{ secrets.SITEGROUND_PORT }}" \
             ./ "${{ secrets.SITEGROUND_USER }}@${{ secrets.SITEGROUND_HOST }}:${{ secrets.SITEGROUND_PATH }}"
+
+      - name: Clear SiteGround cache
+        run: |
+          ssh -i ~/.ssh/siteground_key -p "${{ secrets.SITEGROUND_PORT }}" \
+            "${{ secrets.SITEGROUND_USER }}@${{ secrets.SITEGROUND_HOST }}" \
+            "wp sg purge --path='${{ secrets.SITEGROUND_PATH }}' --allow-root || true"
