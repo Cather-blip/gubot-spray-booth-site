@@ -21,18 +21,37 @@ jobs:
           chmod 600 ~/.ssh/siteground_key
           ssh-keyscan -p "${{ secrets.SITEGROUND_PORT }}" "${{ secrets.SITEGROUND_HOST }}" >> ~/.ssh/known_hosts
 
+      - name: Prepare production files
+        run: |
+          rm -rf .deploy
+          mkdir -p .deploy
+
+          find . -maxdepth 1 -type f \( \
+            -name "*.html" -o \
+            -name "*.css" -o \
+            -name "*.js" -o \
+            -name "*.php" -o \
+            -name ".htaccess" -o \
+            -name "robots.txt" -o \
+            -name "sitemap.xml" \
+          \) -exec cp {} .deploy/ \;
+
+          mkdir -p .deploy/assets
+          rsync -a \
+            --include="*/" \
+            --include="*.webp" \
+            --include="*.svg" \
+            --include="tracking.js" \
+            --exclude="*" \
+            assets/ .deploy/assets/
+
       - name: Sync files to SiteGround public_html
         run: |
           rsync -az \
-            --exclude=".git/" \
-            --exclude=".github/" \
-            --exclude=".DS_Store" \
-            --exclude="tmp/" \
-            --exclude="design-qa*.png" \
-            --exclude="design-qa.md" \
-            --exclude="image-credits.md" \
+            --delete \
+            --exclude=".well-known/" \
             -e "ssh -i ~/.ssh/siteground_key -p ${{ secrets.SITEGROUND_PORT }}" \
-            ./ "${{ secrets.SITEGROUND_USER }}@${{ secrets.SITEGROUND_HOST }}:${{ secrets.SITEGROUND_PATH }}"
+            .deploy/ "${{ secrets.SITEGROUND_USER }}@${{ secrets.SITEGROUND_HOST }}:${{ secrets.SITEGROUND_PATH }}"
 
       - name: Clear SiteGround cache
         run: |
