@@ -337,7 +337,7 @@ body {
 }
 
 .hero__image {
-  background-image: url("assets/hero-spray-booth-factory-v3.jpg");
+  background-image: url("assets/hero-spray-booth-factory-v3.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
@@ -1006,7 +1006,7 @@ body {
   background:
     linear-gradient(90deg, rgba(248, 252, 255, 0.98) 0%, rgba(238, 247, 255, 0.9) 34%, rgba(238, 247, 255, 0.28) 60%, rgba(248, 252, 255, 0.03) 100%),
     radial-gradient(circle at 16% 20%, rgba(11, 130, 240, 0.14), transparent 30%),
-    url("assets/company-strength-bg-v3.jpg") center right / cover no-repeat;
+    url("assets/company-strength-bg-v3.webp") center right / cover no-repeat;
 }
 
 .company-strength .container {
@@ -3270,6 +3270,53 @@ body {
 .quote-form textarea {
   min-height: 110px;
   resize: vertical;
+}
+
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.thank-you {
+  min-height: calc(100vh - 117px);
+  display: grid;
+  align-items: center;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(11, 130, 240, 0.16), transparent 28%),
+    linear-gradient(135deg, #fff 0%, var(--logo-blue-pale) 100%);
+}
+
+.thank-you__panel {
+  max-width: 760px;
+  padding: 58px;
+  background: #fff;
+  border: 1px solid rgba(11, 130, 240, 0.18);
+  border-radius: 8px;
+  box-shadow: 0 24px 54px rgba(11, 130, 240, 0.12);
+}
+
+.thank-you__panel h1 {
+  margin: 0 0 16px;
+  color: #132f4c;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.04;
+}
+
+.thank-you__panel p:not(.eyebrow) {
+  max-width: 620px;
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 18px;
+}
+
+.thank-you__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
 }
 
 .contact-page {

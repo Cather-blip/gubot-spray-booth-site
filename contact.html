@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Gubot | Automotive Spray Booth Quotation</title>
     <meta name="description" content="Contact Gubot for automotive spray booth quotations. Send workshop size, vehicle type, voltage, heating preference, and delivery country to receive a car paint booth project recommendation.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=final-scan-20260630">
+    <link rel="canonical" href="https://www.gubotspraybooth.com/contact.html">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="styles.css?v=performance-20260701">
   </head>
   <body>
     <header class="site-header" id="top">
@@ -27,7 +30,7 @@
       <nav class="nav">
         <div class="container nav__inner">
           <a class="brand" href="index.html" aria-label="Gubot home">
-            <img src="assets/logo-combo.svg" alt="Gubot">
+            <img loading="lazy" decoding="async" src="assets/logo-combo.svg" alt="Gubot">
           </a>
           <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
             <span></span><span></span><span></span>
@@ -85,7 +88,10 @@
               </article>
             </div>
           </div>
-          <form class="quote-form quote-form--contact" action="mailto:contact@gubotspraybooth.com" method="post" enctype="text/plain">
+          <form class="quote-form quote-form--contact" action="/send-inquiry.php" method="post" data-track-form="lead">
+            <input type="hidden" name="form_source" value="Contact page quote form">
+            <input type="hidden" name="page_url" value="https://www.gubotspraybooth.com/contact.html">
+            <label class="form-honeypot" aria-hidden="true">Company website<input type="text" name="company_website" tabindex="-1" autocomplete="off"></label>
             <div class="quote-form__header">
               <p class="eyebrow">Get Quote</p>
               <h2>Send your project information</h2>
@@ -136,7 +142,7 @@
     <footer class="footer">
       <div class="container footer__grid">
         <div class="footer__brand">
-          <img class="footer__logo" src="assets/logo-combo.svg" alt="Gubot">
+          <img loading="lazy" decoding="async" class="footer__logo" src="assets/logo-combo.svg" alt="Gubot">
           <p>Gubot supplies automotive spray booth solutions for repair shops, 4S service centers, and collision repair projects across global markets.</p>
           <div class="footer__social" aria-label="Gubot social links">
             <a href="https://www.instagram.com/gubotspraybooth/" target="_blank" rel="noopener" aria-label="Gubot on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
@@ -173,6 +179,7 @@
     <a class="whatsapp" href="https://api.whatsapp.com/send?phone=8613386039948" aria-label="Chat with Gubot on WhatsApp" title="WhatsApp">
       <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
     </a>
-    <script src="script.js?v=final-scan-20260630"></script>
+    <script src="assets/tracking.js?v=seo-fix-20260701" defer></script>
+    <script src="script.js?v=seo-fix-20260701"></script>
   </body>
 </html>
