@@ -1,4 +1,4 @@
-window.GUBOT_GA4_ID = window.GUBOT_GA4_ID || "";
+window.GUBOT_GA4_ID = window.GUBOT_GA4_ID || "G-H83P8KN0KK";
 window.GUBOT_GTM_ID = window.GUBOT_GTM_ID || "";
 
 (function () {
