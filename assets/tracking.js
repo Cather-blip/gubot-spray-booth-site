@@ -29,18 +29,23 @@ window.GUBOT_GTM_ID = window.GUBOT_GTM_ID || "GTM-K4MXJDVG";
   }
 
   window.gubotTrackEvent = function (eventName, eventParams) {
+    const payload = {
+      event: eventName,
+      page_location: window.location.href,
+      page_path: window.location.pathname,
+      ...eventParams,
+    };
+
     if (typeof window.gtag === "function") {
+      const { event, ...gtagPayload } = payload;
       window.gtag("event", eventName, {
         transport_type: "beacon",
-        ...eventParams,
+        ...gtagPayload,
       });
     }
 
     if (Array.isArray(window.dataLayer)) {
-      window.dataLayer.push({
-        event: eventName,
-        ...eventParams,
-      });
+      window.dataLayer.push(payload);
     }
   };
 
@@ -48,9 +53,9 @@ window.GUBOT_GTM_ID = window.GUBOT_GTM_ID || "GTM-K4MXJDVG";
     document.querySelectorAll("form[data-track-form='lead']").forEach((form) => {
       form.addEventListener("submit", () => {
         const source = form.querySelector("[name='form_source']")?.value || "Quote form";
-        window.gubotTrackEvent("generate_lead", {
+        window.gubotTrackEvent("form_submit", {
           lead_source: source,
-          page_location: window.location.href,
+          form_location: window.location.pathname,
         });
       });
     });
@@ -58,7 +63,7 @@ window.GUBOT_GTM_ID = window.GUBOT_GTM_ID || "GTM-K4MXJDVG";
     document.querySelectorAll("a[href*='api.whatsapp.com/send']").forEach((link) => {
       link.addEventListener("click", () => {
         window.gubotTrackEvent("whatsapp_click", {
-          page_location: window.location.href,
+          link_url: link.href,
         });
       });
     });
@@ -66,17 +71,43 @@ window.GUBOT_GTM_ID = window.GUBOT_GTM_ID || "GTM-K4MXJDVG";
     document.querySelectorAll("a[href^='mailto:']").forEach((link) => {
       link.addEventListener("click", () => {
         window.gubotTrackEvent("email_click", {
-          page_location: window.location.href,
+          link_url: link.href,
         });
       });
     });
 
     if (window.location.pathname.endsWith("/thank-you.html")) {
+      window.gubotTrackEvent("thank_you_view", {
+        lead_source: "Thank you page",
+        conversion_type: "quote_request",
+      });
       window.gubotTrackEvent("generate_lead", {
         lead_source: "Thank you page",
-        page_location: window.location.href,
+        conversion_type: "quote_request",
       });
     }
+
+    document.querySelectorAll("a").forEach((link) => {
+      const linkText = (link.textContent || "").trim().toLowerCase();
+      const isProductQuote =
+        window.location.pathname.endsWith("/product.html") &&
+        link.getAttribute("href")?.includes("contact.html") &&
+        /request quote|request quotation/.test(linkText);
+
+      if (!isProductQuote) {
+        return;
+      }
+
+      link.addEventListener("click", () => {
+        const card = link.closest(".catalog-card");
+        window.gubotTrackEvent("product_request_quote_click", {
+          product_model: card?.querySelector(".catalog-card__status")?.textContent?.trim() || "",
+          product_name: card?.querySelector("h3")?.textContent?.trim() || "",
+          link_text: link.textContent.trim(),
+          link_url: link.href,
+        });
+      });
+    });
   };
 
   if (document.readyState === "loading") {

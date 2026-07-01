@@ -7,9 +7,12 @@
 
   RewriteRule ^home/?$ / [R=301,L]
   RewriteRule ^index\.html$ / [R=301,L]
+  RewriteRule ^about-us/?$ /about.html [R=301,L]
   RewriteRule ^product-list/?$ /product.html [R=301,L]
   RewriteRule ^case-list/?$ /cases.html [R=301,L]
   RewriteRule ^contact-us/?$ /contact.html [R=301,L]
+  RewriteRule ^news-list/?$ /news.html [R=301,L]
+  RewriteRule ^thank-you/?$ /thank-you.html [R=301,L]
 </IfModule>
 
 <IfModule mod_expires.c>
