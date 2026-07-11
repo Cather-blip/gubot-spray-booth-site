@@ -41,7 +41,8 @@ jobs:
             --include="*/" \
             --include="*.webp" \
             --include="*.svg" \
-            --include="tracking.js" \
+            --include="*.css" \
+            --include="*.js" \
             --exclude="*" \
             assets/ .deploy/assets/
 
