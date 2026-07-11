@@ -53,8 +53,8 @@ jobs:
             -e "ssh -i ~/.ssh/siteground_key -p ${{ secrets.SITEGROUND_PORT }}" \
             .deploy/ "${{ secrets.SITEGROUND_USER }}@${{ secrets.SITEGROUND_HOST }}:${{ secrets.SITEGROUND_PATH }}"
 
-      - name: Clear SiteGround cache
+      - name: Clear SiteGround cache when available
         run: |
           ssh -i ~/.ssh/siteground_key -p "${{ secrets.SITEGROUND_PORT }}" \
             "${{ secrets.SITEGROUND_USER }}@${{ secrets.SITEGROUND_HOST }}" \
-            "wp sg purge --path='${{ secrets.SITEGROUND_PATH }}' --allow-root || true"
+            "if command -v wp >/dev/null 2>&1 && [ -f '${{ secrets.SITEGROUND_PATH }}/wp-config.php' ]; then wp sg purge --path='${{ secrets.SITEGROUND_PATH }}' --allow-root; else echo 'Static site deployed; WordPress cache purge skipped.'; fi"
