@@ -887,7 +887,7 @@
   gap: clamp(8px, 1vw, 14px);
   padding: 0 clamp(10px, 1.2vw, 16px);
   color: #fff;
-  background: var(--catalog-navy-soft);
+  background: var(--fuel-accent);
   border: 0;
   border-radius: 3px;
   cursor: pointer;
@@ -895,10 +895,6 @@
   font-size: clamp(7px, 0.68vw, 10px);
   font-weight: 820;
   white-space: nowrap;
-}
-
-.catalog-product__details-entry.is-ready button {
-  background: var(--catalog-blue);
 }
 
 .catalog-product__details-entry button span {
