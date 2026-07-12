@@ -30,7 +30,7 @@
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
     <link rel="stylesheet" href="../styles.css?v=performance-20260701">
-    <link rel="stylesheet" href="catalog.css?v=digital-catalog-20260712-2">
+    <link rel="stylesheet" href="catalog.css?v=digital-catalog-20260712-3">
 
     <script type="application/ld+json">
       {
@@ -163,6 +163,31 @@
         </div>
       </section>
 
+      <dialog
+        id="catalogDetailsDialog"
+        class="catalog-details notranslate"
+        translate="no"
+        aria-labelledby="catalogDetailsTitle"
+        aria-describedby="catalogDetailsSummary"
+      >
+        <section class="catalog-details__panel">
+          <header class="catalog-details__header">
+            <div>
+              <p id="catalogDetailsEyebrow" class="catalog-details__eyebrow">Technical Configuration</p>
+              <h2 id="catalogDetailsTitle">Model specification</h2>
+              <p id="catalogDetailsSummary">Detailed configuration for this model.</p>
+            </div>
+            <button id="catalogDetailsClose" class="catalog-details__close" type="button" aria-label="Close detailed configuration">
+              <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+          </header>
+          <div id="catalogDetailsBody" class="catalog-details__body" tabindex="0"></div>
+          <footer class="catalog-details__footer">
+            <p id="catalogDetailsFootnote"></p>
+          </footer>
+        </section>
+      </dialog>
+
       <noscript>
         <p class="catalog-noscript">JavaScript is required to open the digital catalog. Please contact Gubot for a PDF copy.</p>
       </noscript>
@@ -211,7 +236,8 @@
     </a>
 
     <script src="../assets/tracking.js?v=conversion-events-20260701" defer></script>
-    <script src="catalog.js?v=digital-catalog-20260712-2" defer></script>
+    <script src="specifications.js?v=20260712-e-eco-1" defer></script>
+    <script src="catalog.js?v=digital-catalog-20260712-3" defer></script>
     <script src="../script.js?v=seo-fix-20260701" defer></script>
   </body>
 </html>

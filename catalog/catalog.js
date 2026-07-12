@@ -45,6 +45,15 @@
       internal: "内尺寸",
       external: "外尺寸",
       technicalNote: "最终规格以双方确认的技术协议为准。",
+      detailsEyebrow: "技术配置",
+      detailsTitle: "详细配置参数",
+      detailsReady: "17项完整技术配置",
+      detailsButton: "查看完整配置",
+      detailsReserved: "完整配置请联系确认",
+      detailsReservedButton: "查看配置说明",
+      detailsReservedText: "该型号的完整配置清单将根据项目条件确认。请联系GUBOT获取最新技术资料。",
+      detailsClose: "关闭详细配置",
+      detailsContact: "联系 GUBOT",
       standardsEyebrow: "系列工程标准",
       standardsTitle: "为专业喷涂作业而设计",
       standardsIntro: "GBT-SB6900 系列围绕气流组织、过滤、照明、安全控制与维护便利性进行系统配置。",
@@ -105,6 +114,15 @@
       internal: "Internal",
       external: "External",
       technicalNote: "Final specifications are subject to the mutually confirmed technical agreement.",
+      detailsEyebrow: "TECHNICAL CONFIGURATION",
+      detailsTitle: "Detailed technical configuration",
+      detailsReady: "17 complete technical items",
+      detailsButton: "View full configuration",
+      detailsReserved: "Full configuration available on request",
+      detailsReservedButton: "View configuration note",
+      detailsReservedText: "The full configuration for this model will be confirmed according to the project requirements. Contact GUBOT for the latest technical information.",
+      detailsClose: "Close detailed configuration",
+      detailsContact: "Contact GUBOT",
       standardsEyebrow: "SERIES ENGINEERING STANDARDS",
       standardsTitle: "Designed for professional refinishing",
       standardsIntro: "The GBT-SB6900 series brings airflow, filtration, lighting, safety controls and service access together in a coordinated workshop solution.",
@@ -165,6 +183,15 @@
       internal: "Intérieures",
       external: "Extérieures",
       technicalNote: "Les spécifications finales sont soumises à l’accord technique confirmé par les deux parties.",
+      detailsEyebrow: "CONFIGURATION TECHNIQUE",
+      detailsTitle: "Configuration technique détaillée",
+      detailsReady: "17 éléments techniques détaillés",
+      detailsButton: "Voir la configuration complète",
+      detailsReserved: "Configuration complète sur demande",
+      detailsReservedButton: "Voir les informations",
+      detailsReservedText: "La configuration complète de ce modèle sera confirmée selon les exigences du projet. Contactez GUBOT pour obtenir les dernières informations techniques.",
+      detailsClose: "Fermer la configuration détaillée",
+      detailsContact: "Contacter GUBOT",
       standardsEyebrow: "STANDARDS D’INGÉNIERIE DE LA GAMME",
       standardsTitle: "Conçue pour la carrosserie professionnelle",
       standardsIntro: "La série GBT-SB6900 associe ventilation, filtration, éclairage, commandes de sécurité et facilité d’entretien.",
@@ -225,6 +252,15 @@
       internal: "Interior",
       external: "Exterior",
       technicalNote: "Las especificaciones finales están sujetas al acuerdo técnico confirmado por ambas partes.",
+      detailsEyebrow: "CONFIGURACIÓN TÉCNICA",
+      detailsTitle: "Configuración técnica detallada",
+      detailsReady: "17 elementos técnicos completos",
+      detailsButton: "Ver configuración completa",
+      detailsReserved: "Configuración completa disponible bajo consulta",
+      detailsReservedButton: "Ver información",
+      detailsReservedText: "La configuración completa de este modelo se confirmará según los requisitos del proyecto. Contacte con GUBOT para obtener la información técnica más reciente.",
+      detailsClose: "Cerrar configuración detallada",
+      detailsContact: "Contactar con GUBOT",
       standardsEyebrow: "ESTÁNDARES DE INGENIERÍA DE LA SERIE",
       standardsTitle: "Diseñada para el repintado profesional",
       standardsIntro: "La serie GBT-SB6900 integra flujo de aire, filtración, iluminación, seguridad y facilidad de mantenimiento.",
@@ -285,6 +321,15 @@
       internal: "Interne",
       external: "Esterne",
       technicalNote: "Le specifiche finali sono soggette all’accordo tecnico confermato da entrambe le parti.",
+      detailsEyebrow: "CONFIGURAZIONE TECNICA",
+      detailsTitle: "Configurazione tecnica dettagliata",
+      detailsReady: "17 voci tecniche complete",
+      detailsButton: "Visualizza la configurazione completa",
+      detailsReserved: "Configurazione completa su richiesta",
+      detailsReservedButton: "Visualizza le informazioni",
+      detailsReservedText: "La configurazione completa di questo modello sarà confermata in base ai requisiti del progetto. Contatta GUBOT per le informazioni tecniche più recenti.",
+      detailsClose: "Chiudi la configurazione dettagliata",
+      detailsContact: "Contatta GUBOT",
       standardsEyebrow: "STANDARD TECNICI DELLA GAMMA",
       standardsTitle: "Progettata per la verniciatura professionale",
       standardsIntro: "La serie GBT-SB6900 integra ventilazione, filtrazione, illuminazione, controlli di sicurezza e facilità di manutenzione.",
@@ -345,6 +390,15 @@
       internal: "Innen",
       external: "Außen",
       technicalNote: "Die endgültigen Spezifikationen richten sich nach der beiderseits bestätigten technischen Vereinbarung.",
+      detailsEyebrow: "TECHNISCHE KONFIGURATION",
+      detailsTitle: "Detaillierte technische Konfiguration",
+      detailsReady: "17 vollständige technische Positionen",
+      detailsButton: "Vollständige Konfiguration anzeigen",
+      detailsReserved: "Vollständige Konfiguration auf Anfrage",
+      detailsReservedButton: "Hinweis anzeigen",
+      detailsReservedText: "Die vollständige Konfiguration dieses Modells wird entsprechend den Projektanforderungen bestätigt. Kontaktieren Sie GUBOT für die neuesten technischen Informationen.",
+      detailsClose: "Detaillierte Konfiguration schließen",
+      detailsContact: "GUBOT kontaktieren",
       standardsEyebrow: "TECHNISCHE STANDARDS DER BAUREIHE",
       standardsTitle: "Für professionelle Lackierarbeiten entwickelt",
       standardsIntro: "Die Baureihe GBT-SB6900 verbindet Luftführung, Filterung, Beleuchtung, Sicherheitssteuerung und Wartungszugang.",
@@ -596,7 +650,18 @@
   var nextButton = document.getElementById("catalogNext");
   var counter = document.getElementById("catalogCounter");
   var languageSelect = document.getElementById("catalogLanguage");
-  if (!book || !previousButton || !nextButton || !counter || !languageSelect) return;
+  var detailsDialog = document.getElementById("catalogDetailsDialog");
+  var detailsEyebrow = document.getElementById("catalogDetailsEyebrow");
+  var detailsTitle = document.getElementById("catalogDetailsTitle");
+  var detailsSummary = document.getElementById("catalogDetailsSummary");
+  var detailsBody = document.getElementById("catalogDetailsBody");
+  var detailsFootnote = document.getElementById("catalogDetailsFootnote");
+  var detailsCloseButton = document.getElementById("catalogDetailsClose");
+  if (!book || !previousButton || !nextButton || !counter || !languageSelect || !detailsDialog || !detailsEyebrow || !detailsTitle || !detailsSummary || !detailsBody || !detailsFootnote || !detailsCloseButton) return;
+
+  var specificationModels = (window.GubotCatalogSpecifications && window.GubotCatalogSpecifications.models) || {};
+  var detailsOpener = null;
+  var restoreDetailsFocus = true;
 
   var params = new URLSearchParams(window.location.search);
   var requestedLocale = params.get("lang");
@@ -659,6 +724,24 @@
     ].join(""));
   }
 
+  function getSpecificationRecord(modelCode) {
+    return specificationModels[modelCode] || { status: "reserved" };
+  }
+
+  function buildDetailsEntry(c, model) {
+    var record = getSpecificationRecord(model.code);
+    var isReady = record.status === "complete" && record.locales && record.locales[locale];
+    return [
+      '<div class="catalog-product__details-entry ', isReady ? 'is-ready' : 'is-reserved', '">',
+        '<div><span>', escapeHtml(c.detailsTitle), '</span><strong>', escapeHtml(isReady ? c.detailsReady : c.detailsReserved), '</strong></div>',
+        '<button type="button" data-details-model="', escapeHtml(model.code), '" aria-haspopup="dialog" aria-controls="catalogDetailsDialog" aria-label="', escapeHtml((isReady ? c.detailsButton : c.detailsReservedButton) + " · " + model.code), '">',
+          escapeHtml(isReady ? c.detailsButton : c.detailsReservedButton),
+          '<span aria-hidden="true">→</span>',
+        '</button>',
+      '</div>'
+    ].join("");
+  }
+
   function buildProduct(c, model) {
     var specs = model.specs.map(function (spec) {
       return '<div class="catalog-spec"><dt>' + escapeHtml(c.labels[spec[0]]) + '</dt><dd>' + escapeHtml(spec[1]) + '</dd></div>';
@@ -677,6 +760,7 @@
         '</header>',
         '<dl class="catalog-specs">' + specs + '</dl>',
         '<div class="catalog-dimensions"><strong>' + escapeHtml(c.dimensions) + '</strong><span>' + escapeHtml(c.internal) + ' 6900 × 3900 × 2600 mm</span><span>' + escapeHtml(c.external) + ' ' + escapeHtml(model.external) + '</span></div>',
+        buildDetailsEntry(c, model),
         '<p class="catalog-technical-note">' + escapeHtml(c.technicalNote) + '</p>',
       '</div>'
     ].join(""));
@@ -716,6 +800,66 @@
       '</div>',
       '<div class="catalog-contact-page__footer"><span>GUBOT</span><span>' + escapeHtml(c.contactFooter) + '</span></div>'
     ].join(""));
+  }
+
+  function finishDetailsClose() {
+    document.body.classList.remove("catalog-details-open");
+    if (restoreDetailsFocus && detailsOpener && document.contains(detailsOpener)) {
+      detailsOpener.focus();
+    }
+    detailsOpener = null;
+    restoreDetailsFocus = true;
+  }
+
+  function closeDetails(restoreFocus) {
+    if (!detailsDialog.open) return;
+    restoreDetailsFocus = restoreFocus !== false;
+    if (typeof detailsDialog.close === "function") {
+      detailsDialog.close();
+    } else {
+      detailsDialog.removeAttribute("open");
+      finishDetailsClose();
+    }
+  }
+
+  function openDetails(modelCode, opener) {
+    if (isAnimating) return;
+    var c = copy[locale];
+    var record = getSpecificationRecord(modelCode);
+    var localizedItems = record.status === "complete" && record.locales
+      ? (record.locales[locale] || record.locales.en)
+      : null;
+
+    detailsEyebrow.textContent = c.detailsEyebrow;
+    detailsTitle.textContent = c.detailsTitle + " · " + modelCode;
+    detailsSummary.textContent = localizedItems ? c.detailsReady : c.detailsReserved;
+    detailsFootnote.textContent = c.technicalNote;
+    detailsCloseButton.setAttribute("aria-label", c.detailsClose);
+
+    if (localizedItems) {
+      detailsBody.innerHTML = '<dl class="catalog-details__list">' + localizedItems.map(function (item, index) {
+        return '<div class="catalog-details__item"><dt><span>' + String(index + 1).padStart(2, "0") + '</span>' + escapeHtml(item[0]) + '</dt><dd>' + escapeHtml(item[1]) + '</dd></div>';
+      }).join("") + '</dl>';
+    } else {
+      detailsBody.innerHTML = [
+        '<div class="catalog-details__placeholder">',
+          '<span class="catalog-details__placeholder-mark" aria-hidden="true">GBT</span>',
+          '<h3>', escapeHtml(c.detailsReserved), '</h3>',
+          '<p>', escapeHtml(c.detailsReservedText), '</p>',
+          '<a href="mailto:contact@gubotspraybooth.com">', escapeHtml(c.detailsContact), ' →</a>',
+        '</div>'
+      ].join("");
+    }
+
+    detailsOpener = opener || null;
+    detailsBody.scrollTop = 0;
+    document.body.classList.add("catalog-details-open");
+    if (typeof detailsDialog.showModal === "function") {
+      detailsDialog.showModal();
+    } else {
+      detailsDialog.setAttribute("open", "");
+    }
+    window.requestAnimationFrame(function () { detailsBody.focus(); });
   }
 
   function buildPage(index) {
@@ -769,6 +913,7 @@
 
   function render(index, direction, animate) {
     if (isAnimating || index < 0 || index >= TOTAL_PAGES) return;
+    if (detailsDialog.open) closeDetails(false);
     var oldPage = book.querySelector(".catalog-sheet.is-active");
     currentPage = index;
     var newPage = buildPage(index);
@@ -810,7 +955,18 @@
     render(currentPage, 0, false);
   });
 
+  detailsCloseButton.addEventListener("click", function () { closeDetails(true); });
+  detailsDialog.addEventListener("close", finishDetailsClose);
+  detailsDialog.addEventListener("click", function (event) {
+    if (event.target === detailsDialog) closeDetails(true);
+  });
+
   book.addEventListener("click", function (event) {
+    var detailsTrigger = event.target.closest("[data-details-model]");
+    if (detailsTrigger) {
+      openDetails(detailsTrigger.getAttribute("data-details-model"), detailsTrigger);
+      return;
+    }
     var trigger = event.target.closest("[data-page]");
     if (!trigger) return;
     var page = parseInt(trigger.getAttribute("data-page"), 10);
@@ -818,6 +974,7 @@
   });
 
   document.addEventListener("keydown", function (event) {
+    if (detailsDialog.open) return;
     var tag = event.target && event.target.tagName ? event.target.tagName.toLowerCase() : "";
     if (tag === "select" || tag === "input" || tag === "textarea") return;
     if (event.key === "ArrowRight" || event.key === "PageDown") {
@@ -838,6 +995,7 @@
   var pointerStart = null;
   book.addEventListener("pointerdown", function (event) {
     if (event.pointerType === "mouse" && event.button !== 0) return;
+    if (event.target.closest("button, a, input, select, textarea")) return;
     pointerStart = { x: event.clientX, y: event.clientY, id: event.pointerId };
   });
   book.addEventListener("pointerup", function (event) {
