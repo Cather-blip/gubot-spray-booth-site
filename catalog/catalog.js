@@ -607,6 +607,10 @@
   var isAnimating = false;
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  // Keep the surrounding website chrome in the same language as a shared catalog link.
+  // The catalog itself is protected by translate="no" and uses reviewed human translations.
+  setSiteLanguage(locale);
+
   function pageShell(classes, inner) {
     var article = document.createElement("article");
     article.className = "catalog-sheet " + classes;
