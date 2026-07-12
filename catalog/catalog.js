@@ -543,15 +543,15 @@
     var c = copy[locale];
     var t = terms[locale];
     return [
-      { code: "GBT-SB6900-E-ECO", fuel: "electric", tier: "eco", image: "assets/booth-electric.webp", specs: [["wall", t.eps], ["base", t.galvanized], ["air", "2×3 kW + 1×4 kW"], ["heat", t.fixedIr], ["light", t.ceiling32]] },
-      { code: "GBT-SB6900-E-PLUS", fuel: "electric", tier: "plus", image: "assets/booth-electric.webp", specs: [["wall", t.rock05], ["base", t.channel], ["air", "2×3 kW + 1×5.5 kW"], ["heat", t.doorIr], ["control", t.vfd]] },
-      { code: "GBT-SB6900-E-PRO", fuel: "electric", tier: "pro", image: "assets/booth-electric.webp", specs: [["wall", t.rock], ["base", t.channelPro], ["heat", t.radiant], ["control", t.glassVfd], ["light", t.proLight]] },
-      { code: "GBT-SB6900-NG-ECO", fuel: "naturalGas", tier: "eco", image: "assets/booth-gas.webp", specs: [["wall", t.rock04], ["base", t.galvanized], ["air", "2×3 kW + 1×5.5 kW"], ["heat", t.gas201], ["control", t.gasAlarm]] },
-      { code: "GBT-SB6900-NG-PLUS", fuel: "naturalGas", tier: "plus", image: "assets/booth-gas.webp", specs: [["wall", t.rock05], ["base", t.channel], ["air", "2×3 kW + 1×5.5 kW · " + t.vfd], ["heat", t.gas201Plus], ["light", t.ceilingWaist]] },
-      { code: "GBT-SB6900-NG-PRO", fuel: "naturalGas", tier: "pro", image: "assets/booth-gas.webp", specs: [["wall", t.rockPro], ["base", t.channel], ["air", "2×3 kW + 1×5.5 kW · " + t.linkedVfd], ["heat", t.gas304], ["control", t.gasProControl]] },
-      { code: "GBT-SB6900-D-ECO", fuel: "diesel", tier: "eco", image: "assets/booth-diesel.webp", specs: [["wall", t.eps], ["base", t.galvanized], ["air", "2×3 kW + 1×5.5 kW"], ["heat", t.dieselEco], ["light", t.ceilingWaist]] },
-      { code: "GBT-SB6900-D-PLUS", fuel: "diesel", tier: "plus", image: "assets/booth-diesel.webp", specs: [["wall", t.rock05], ["base", t.channel], ["air", "1×5.5 kW · " + t.vfd], ["heat", t.diesel201], ["control", t.projectControl]] },
-      { code: "GBT-SB6900-D-PRO", fuel: "diesel", tier: "pro", image: "assets/booth-diesel.webp", specs: [["wall", t.rock], ["base", t.channelPro], ["air", t.linkedVfd], ["heat", t.diesel304], ["control", t.glassVfd]] }
+      { code: "GBT-SB6900-E-ECO", fuel: "electric", tier: "eco", image: "assets/booth-white-20260712.webp", specs: [["wall", t.eps], ["base", t.galvanized], ["air", "2×3 kW + 1×4 kW"], ["heat", t.fixedIr], ["light", t.ceiling32]] },
+      { code: "GBT-SB6900-E-PLUS", fuel: "electric", tier: "plus", image: "assets/booth-white-20260712.webp", specs: [["wall", t.rock05], ["base", t.channel], ["air", "2×3 kW + 1×5.5 kW"], ["heat", t.doorIr], ["control", t.vfd]] },
+      { code: "GBT-SB6900-E-PRO", fuel: "electric", tier: "pro", image: "assets/booth-white-20260712.webp", specs: [["wall", t.rock], ["base", t.channelPro], ["heat", t.radiant], ["control", t.glassVfd], ["light", t.proLight]] },
+      { code: "GBT-SB6900-NG-ECO", fuel: "naturalGas", tier: "eco", image: "assets/booth-white-20260712.webp", specs: [["wall", t.rock04], ["base", t.galvanized], ["air", "2×3 kW + 1×5.5 kW"], ["heat", t.gas201], ["control", t.gasAlarm]] },
+      { code: "GBT-SB6900-NG-PLUS", fuel: "naturalGas", tier: "plus", image: "assets/booth-white-20260712.webp", specs: [["wall", t.rock05], ["base", t.channel], ["air", "2×3 kW + 1×5.5 kW · " + t.vfd], ["heat", t.gas201Plus], ["light", t.ceilingWaist]] },
+      { code: "GBT-SB6900-NG-PRO", fuel: "naturalGas", tier: "pro", image: "assets/booth-white-20260712.webp", specs: [["wall", t.rockPro], ["base", t.channel], ["air", "2×3 kW + 1×5.5 kW · " + t.linkedVfd], ["heat", t.gas304], ["control", t.gasProControl]] },
+      { code: "GBT-SB6900-D-ECO", fuel: "diesel", tier: "eco", image: "assets/booth-white-20260712.webp", specs: [["wall", t.eps], ["base", t.galvanized], ["air", "2×3 kW + 1×5.5 kW"], ["heat", t.dieselEco], ["light", t.ceilingWaist]] },
+      { code: "GBT-SB6900-D-PLUS", fuel: "diesel", tier: "plus", image: "assets/booth-white-20260712.webp", specs: [["wall", t.rock05], ["base", t.channel], ["air", "1×5.5 kW · " + t.vfd], ["heat", t.diesel201], ["control", t.projectControl]] },
+      { code: "GBT-SB6900-D-PRO", fuel: "diesel", tier: "pro", image: "assets/booth-white-20260712.webp", specs: [["wall", t.rock], ["base", t.channelPro], ["air", t.linkedVfd], ["heat", t.diesel304], ["control", t.glassVfd]] }
     ].map(function (model) {
       model.fuelName = c[model.fuel];
       model.tierName = c[model.tier];
@@ -621,7 +621,7 @@
 
   function buildCover(c) {
     return pageShell("catalog-cover", [
-      '<img class="catalog-cover__image" src="assets/booth-hero.webp" alt="Gubot automotive spray booth showroom">',
+      '<img class="catalog-cover__image" src="assets/booth-white-20260712.webp" alt="Gubot professional automotive spray booth">',
       '<div class="catalog-cover__overlay"></div>',
       '<div class="catalog-cover__content">',
         '<p class="catalog-cover__eyebrow">' + escapeHtml(c.coverEyebrow) + '</p>',
@@ -655,7 +655,7 @@
         '<div class="catalog-index">' + groupHtml + '</div>',
         '<p class="catalog-contents__footer">' + escapeHtml(c.contentsFooter) + '</p>',
       '</div>',
-      '<div class="catalog-contents__visual"><img src="assets/booth-hero.webp" alt="Gubot spray booth"><span>GBT-SB6900</span></div>'
+      '<div class="catalog-contents__visual"><img src="assets/booth-white-20260712.webp" alt="Gubot professional automotive spray booth"><span>GBT-SB6900</span></div>'
     ].join(""));
   }
 
@@ -687,7 +687,7 @@
       return '<li><span>' + String(index + 1).padStart(2, "0") + '</span><div><strong>' + escapeHtml(item[0]) + '</strong><p>' + escapeHtml(item[1]) + '</p></div></li>';
     }).join("");
     return pageShell("catalog-standards", [
-      '<div class="catalog-standards__visual"><img src="assets/booth-hero.webp" alt="Gubot spray booth production"><div><span>GBT-SB6900</span><strong>ECO · PLUS · PRO</strong></div></div>',
+      '<div class="catalog-standards__visual"><img src="assets/booth-white-20260712.webp" alt="Gubot professional automotive spray booth"><div><span>GBT-SB6900</span><strong>ECO · PLUS · PRO</strong></div></div>',
       '<div class="catalog-standards__content">',
         '<p class="catalog-sheet__kicker">' + escapeHtml(c.standardsEyebrow) + '</p>',
         '<h2 class="catalog-sheet__title">' + escapeHtml(c.standardsTitle) + '</h2>',
@@ -701,7 +701,7 @@
   function buildContact(c) {
     var whatsappHref = "https://api.whatsapp.com/send?phone=8613386039948&text=" + encodeURIComponent(c.whatsappText);
     return pageShell("catalog-contact-page", [
-      '<img class="catalog-contact-page__image" src="assets/booth-hero.webp" alt="Gubot spray booth showroom">',
+      '<img class="catalog-contact-page__image" src="assets/booth-white-20260712.webp" alt="Gubot professional automotive spray booth">',
       '<div class="catalog-contact-page__overlay"></div>',
       '<div class="catalog-contact-page__content">',
         '<p class="catalog-sheet__kicker">' + escapeHtml(c.contactEyebrow) + '</p>',
@@ -730,9 +730,17 @@
 
   function updateUrl() {
     var url = new URL(window.location.href);
+    var cleanPath = url.pathname.replace(/\/+$/, "") || "/catalog";
+
+    // Keep the cover URL short and presentation-ready, regardless of language.
+    if (currentPage === 0) {
+      window.history.replaceState({ page: 1, lang: locale }, "", cleanPath);
+      return;
+    }
+
     url.searchParams.set("lang", locale);
     url.searchParams.set("page", String(currentPage + 1));
-    window.history.replaceState({ page: currentPage + 1, lang: locale }, "", url.pathname + url.search + url.hash);
+    window.history.replaceState({ page: currentPage + 1, lang: locale }, "", cleanPath + url.search + url.hash);
   }
 
   function updateInterface() {
