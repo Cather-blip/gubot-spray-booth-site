@@ -46,6 +46,9 @@ jobs:
             --exclude="*" \
             assets/ .deploy/assets/
 
+          mkdir -p .deploy/catalog
+          rsync -a catalog/ .deploy/catalog/
+
       - name: Sync files to SiteGround public_html
         run: |
           rsync -az \
