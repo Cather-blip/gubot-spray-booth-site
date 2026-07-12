@@ -632,6 +632,7 @@
   }
 
   function setSiteLanguage(locale) {
+    if (window.location.protocol === "file:") return;
     var expires = "Fri, 31 Dec 9999 23:59:59 GMT";
     var code = locale === "zh" ? "zh-CN" : locale;
     var host = window.location.hostname;
@@ -873,6 +874,7 @@
   }
 
   function updateUrl() {
+    if (window.location.protocol === "file:") return;
     var url = new URL(window.location.href);
     var cleanPath = url.pathname.replace(/\/+$/, "") || "/catalog";
 
