@@ -1,135 +1,425 @@
 (function () {
   "use strict";
 
-  window.GubotCatalogSpecifications = {
-    models: {
-      "GBT-SB6900-E-ECO": {
-        status: "complete",
-        locales: {
-          zh: [
-            ["产品名称", "电加热汽车喷烤漆房"],
-            ["型号", "GBT-SB6900-E-ECO"],
-            ["内部尺寸", "6900 × 3900 × 2600 mm（长 × 宽 × 高）"],
-            ["外部尺寸", "7000 × 5000 × 3250 mm（长 × 宽 × 高）"],
-            ["房体结构", "50 mm EPS保温复合墙板，双面采用0.4 mm彩涂钢板，密度12 kg/m³。顶板采用标准化设备压制成型的0.7 mm镀锌板。"],
-            ["底台", "300 mm地上式排风底台，采用镀锌板折弯制作；配置三排2.3 mm花纹钢板和两排4 × 30#镀锌钢格栅，支撑件采用镀锌板折弯制作。"],
-            ["正面大门", "一套三扇式钣金大门，厚度50 mm，内部填充EPS，配置铝合金框观察窗。门体尺寸：3000 × 2500 mm（宽 × 高），采用5 mm钢化玻璃。"],
-            ["工作门", "一扇工作门，尺寸700 × 1800 mm（宽 × 高），配置压力锁及铝合金框观察窗，采用5 mm钢化玻璃。"],
-            ["静压室", "采用镀锌折弯加强筋及支撑框架，房体顶板兼作静压室顶板；过滤棉托架连接件采用0.6 mm镀锌板折弯制作。"],
-            ["送风系统", "两台YDW 3 kW专用送风机，Tianyi品牌或同等品牌；单台风量10,000 m³/h。"],
-            ["排风系统", "一台YDW 4 kW专用排风机，江苏恒康或同等品牌；风量12,500 m³/h。"],
-            ["排风管道", "标准配置包含两节直管和一个弯头。"],
-            ["照明系统", "房体两侧上部LED照明。灯箱框架采用0.6 mm镀锌板制作并经喷粉处理；数量：8组 × 4支，共32支24 W LED灯管。"],
-            ["加热系统", "八组外置固定式红外线加热装置，每组3 kW，总加热功率24 kW；房体两侧各四组。"],
-            ["过滤系统", "进风初效过滤器可捕集大于10 µm的颗粒；顶部SF-700G高效过滤棉可捕集大于4 µm的颗粒，捕集率不低于99%；底部采用中效玻璃纤维过滤棉。"],
-            ["电气控制", "采用正泰（CHINT）或同等品牌电气控制元件。主回路设有漏电、缺相、短路及过载保护，并带定时功能；温度可调，配置超温报警。"],
-            ["电源要求", "380 V / 220 V，三相四线，50 Hz；总功率约35 kW。"]
-          ],
-          en: [
-            ["Product", "Electric Heating Automotive Spray / Baking Paint Booth"],
-            ["Model", "GBT-SB6900-E-ECO"],
-            ["Internal size", "6900 × 3900 × 2600 mm (L × W × H)"],
-            ["External size", "7000 × 5000 × 3250 mm (L × W × H)"],
-            ["Booth body", "50 mm EPS insulated composite wall panels with 0.4 mm color-coated steel sheets on both sides, density 12 kg/m³. Roof panels are 0.7 mm galvanized pressed panels formed by standardized equipment."],
-            ["Base platform", "300 mm above-ground exhaust base made from bent galvanized sheet, with three rows of 2.3 mm checker plate and two rows of 4 × 30# galvanized floor grating. Supports are made from bent galvanized sheet."],
-            ["Front door", "One set of three-leaf sheet-metal main door, 50 mm thick, with EPS infill and aluminum-alloy framed viewing windows. Door size: 3000 × 2500 mm (W × H), with 5 mm tempered glass."],
-            ["Service door", "One service door, 700 × 1800 mm (W × H), with pressure lock and aluminum-alloy framed viewing window using 5 mm tempered glass."],
-            ["Plenum chamber", "Galvanized folded reinforcing ribs with support frame. The booth roof panel is used as the top panel. Filter-holder connectors are made from 0.6 mm bent galvanized sheet."],
-            ["Air supply system", "Two YDW 3 kW dedicated supply fans, Tianyi brand or equivalent, air volume 10,000 m³/h per fan."],
-            ["Exhaust system", "One YDW 4 kW dedicated exhaust fan, Jiangsu Hengkang or equivalent, air volume 12,500 m³/h."],
-            ["Exhaust duct", "Two straight ducts and one elbow are included in the standard configuration."],
-            ["Lighting system", "Upper LED lighting on both sides. Powder-coated 0.6 mm galvanized light-box frames. Quantity: 8 sets × 4 tubes = 32 pcs 24 W LED tubes."],
-            ["Heating system", "Eight externally mounted fixed infrared heating sets, 3 kW per set, total heating power 24 kW; four sets on each side."],
-            ["Filter system", "Primary inlet filter captures particles larger than 10 µm. Top SF-700G high-efficiency filter cotton captures particles larger than 4 µm with a capture rate of at least 99%. Bottom medium-efficiency fiberglass filter cotton."],
-            ["Electric control", "CHINT or equivalent electrical controller. Main circuit includes leakage, phase-loss, short-circuit, timing and overload protection. Adjustable temperature control with over-temperature alarm."],
-            ["Power requirement", "380 V / 220 V, 3 phase 4 wire, 50 Hz; total power approx. 35 kW."]
-          ],
-          fr: [
-            ["Produit", "Cabine de peinture et de séchage automobile à chauffage électrique"],
-            ["Modèle", "GBT-SB6900-E-ECO"],
-            ["Dimensions intérieures", "6900 × 3900 × 2600 mm (L × l × H)"],
-            ["Dimensions extérieures", "7000 × 5000 × 3250 mm (L × l × H)"],
-            ["Structure de la cabine", "Parois en panneaux composites isolants en EPS de 50 mm, avec tôle d'acier prélaquée de 0,4 mm sur les deux faces, densité 12 kg/m³. Panneaux de toiture en tôle galvanisée emboutie de 0,7 mm, formés par un équipement standardisé."],
-            ["Soubassement", "Soubassement d'extraction hors sol de 300 mm, réalisé en tôle galvanisée pliée, avec trois rangées de tôle antidérapante de 2,3 mm et deux rangées de caillebotis galvanisé 4 × 30#. Supports en tôle galvanisée pliée."],
-            ["Porte frontale", "Un ensemble de porte principale en tôle à trois vantaux, épaisseur 50 mm, avec remplissage EPS et fenêtres en verre trempé encadrées d'aluminium. Dimensions de la porte : 3000 × 2500 mm (l × H), verre trempé de 5 mm."],
-            ["Porte de service", "Une porte de service de 700 × 1800 mm (l × H), avec serrure à pression et fenêtre encadrée d'aluminium équipée d'un verre trempé de 5 mm."],
-            ["Plénum", "Nervures de renfort en tôle galvanisée pliée avec châssis de support. Le panneau de toiture de la cabine sert de panneau supérieur. Les supports de filtres sont réalisés en tôle galvanisée pliée de 0,6 mm."],
-            ["Système de soufflage d'air", "Deux ventilateurs de soufflage dédiés YDW de 3 kW, marque Tianyi ou équivalent, débit d'air de 10 000 m³/h par ventilateur."],
-            ["Système d'extraction", "Un ventilateur d'extraction dédié YDW de 4 kW, Jiangsu Hengkang ou équivalent, débit d'air de 12 500 m³/h."],
-            ["Conduit d'extraction", "La configuration standard comprend deux conduits droits et un coude."],
-            ["Système d'éclairage", "Éclairage LED supérieur des deux côtés. Cadres des caissons lumineux en tôle galvanisée de 0,6 mm avec revêtement en poudre. Quantité : 8 ensembles × 4 tubes = 32 tubes LED de 24 W."],
-            ["Système de chauffage", "Huit ensembles fixes de chauffage infrarouge montés à l'extérieur, 3 kW par ensemble, puissance thermique totale de 24 kW ; quatre ensembles de chaque côté."],
-            ["Système de filtration", "Préfiltre d'entrée pour les particules supérieures à 10 µm. Filtre supérieur haute efficacité SF-700G pour les particules supérieures à 4 µm, avec un taux de capture ≥99 %. Filtre inférieur en fibre de verre à efficacité moyenne."],
-            ["Commande électrique", "Commande électrique avec composants CHINT ou équivalents. Le circuit principal comprend les protections contre les fuites, la perte de phase, les courts-circuits, la temporisation et les surcharges. Température réglable avec alarme de surchauffe."],
-            ["Alimentation électrique", "380 V / 220 V, 3 phases, 4 fils, 50 Hz ; puissance totale d'environ 35 kW."]
-          ],
-          es: [
-            ["Producto", "Cabina de pintura y secado para automóviles con calefacción eléctrica"],
-            ["Modelo", "GBT-SB6900-E-ECO"],
-            ["Dimensiones internas", "6900 × 3900 × 2600 mm (L × An × Al)"],
-            ["Dimensiones externas", "7000 × 5000 × 3250 mm (L × An × Al)"],
-            ["Estructura de la cabina", "Paneles de pared compuestos aislantes de EPS de 50 mm, con chapa de acero prepintada de 0,4 mm en ambos lados, densidad 12 kg/m³. Paneles de techo de chapa galvanizada prensada de 0,7 mm, conformados con equipo estandarizado."],
-            ["Base de la cabina", "Base de extracción elevada de 300 mm, fabricada en chapa galvanizada plegada, con tres filas de chapa estriada de 2,3 mm y dos filas de rejilla galvanizada de 4 × 30#. Soportes fabricados en chapa galvanizada plegada."],
-            ["Puerta frontal", "Un juego de puerta principal de chapa metálica de tres hojas, 50 mm de espesor, con relleno de EPS y ventanas de vidrio templado con marco de aluminio. Tamaño de la puerta: 3000 × 2500 mm (An × Al), vidrio templado de 5 mm."],
-            ["Puerta de servicio", "Una puerta de servicio de 700 × 1800 mm (An × Al), con cerradura de presión y ventana con marco de aluminio y vidrio templado de 5 mm."],
-            ["Cámara plenum", "Nervios de refuerzo de chapa galvanizada plegada con bastidor de soporte. El panel del techo de la cabina se utiliza como panel superior. Los soportes de los filtros son de chapa galvanizada plegada de 0,6 mm."],
-            ["Sistema de impulsión de aire", "Dos ventiladores de impulsión YDW de 3 kW, marca Tianyi o equivalente, caudal de aire de 10.000 m³/h por ventilador."],
-            ["Sistema de extracción", "Un ventilador de extracción YDW de 4 kW, Jiangsu Hengkang o equivalente, caudal de aire de 12.500 m³/h."],
-            ["Conducto de extracción", "La configuración estándar incluye dos conductos rectos y un codo."],
-            ["Sistema de iluminación", "Iluminación LED superior en ambos lados. Marcos de las cajas de luz de chapa galvanizada de 0,6 mm con recubrimiento en polvo. Cantidad: 8 juegos × 4 tubos = 32 tubos LED de 24 W."],
-            ["Sistema de calefacción", "Ocho juegos fijos de calefacción por infrarrojos montados externamente, 3 kW por juego, potencia térmica total de 24 kW; cuatro juegos en cada lado."],
-            ["Sistema de filtración", "Prefiltro de entrada para partículas superiores a 10 µm. Filtro superior SF-700G de alta eficiencia para partículas superiores a 4 µm, con eficiencia de captura ≥99 %. Filtro inferior de fibra de vidrio de eficiencia media."],
-            ["Control eléctrico", "Controlador eléctrico con componentes CHINT o equivalentes. El circuito principal incluye protección contra fugas, pérdida de fase, cortocircuito, temporización y sobrecarga. Temperatura ajustable con alarma de sobretemperatura."],
-            ["Alimentación eléctrica", "380 V / 220 V, 3 fases, 4 hilos, 50 Hz; potencia total aproximada de 35 kW."]
-          ],
-          it: [
-            ["Prodotto", "Cabina di verniciatura e cottura per auto con riscaldamento elettrico"],
-            ["Modello", "GBT-SB6900-E-ECO"],
-            ["Dimensioni interne", "6900 × 3900 × 2600 mm (L × P × H)"],
-            ["Dimensioni esterne", "7000 × 5000 × 3250 mm (L × P × H)"],
-            ["Struttura cabina", "Pareti della cabina in pannelli compositi isolanti EPS da 50 mm, con lamiera d'acciaio preverniciata da 0,4 mm su entrambi i lati, densità 12 kg/m³. Pannelli del tetto in lamiera zincata pressata da 0,7 mm, formati con attrezzatura standardizzata."],
-            ["Basamento", "Basamento di aspirazione fuori terra alto 300 mm, realizzato in lamiera zincata piegata, con tre file di lamiera mandorlata da 2,3 mm e due file di grigliato zincato 4 × 30#. Supporti in lamiera zincata piegata."],
-            ["Porta frontale", "Un set di porta principale in lamiera a tre ante, spessore 50 mm, con riempimento EPS e finestre con vetro temperato incorniciate in alluminio. Dimensioni porta: 3000 × 2500 mm (L × H), vetro temperato da 5 mm."],
-            ["Porta di servizio", "Una porta di servizio da 700 × 1800 mm (L × H), con serratura a pressione e finestra con telaio in alluminio e vetro temperato da 5 mm."],
-            ["Camera di pressurizzazione", "Nervature di rinforzo in lamiera zincata piegata con telaio di supporto. Il pannello del tetto della cabina funge da pannello superiore. I supporti dei filtri sono in lamiera zincata piegata da 0,6 mm."],
-            ["Sistema di mandata aria", "Due ventilatori di mandata dedicati YDW da 3 kW, marca Tianyi o equivalente, portata d'aria 10.000 m³/h per ventilatore."],
-            ["Sistema di estrazione", "Un ventilatore di estrazione dedicato YDW da 4 kW, Jiangsu Hengkang o equivalente, portata d'aria 12.500 m³/h."],
-            ["Condotto di scarico", "La configurazione standard include due condotti diritti e una curva."],
-            ["Sistema di illuminazione", "Illuminazione LED superiore su entrambi i lati. Telai delle plafoniere in lamiera zincata da 0,6 mm verniciata a polvere. Quantità: 8 gruppi × 4 tubi = 32 tubi LED da 24 W."],
-            ["Sistema di riscaldamento", "Otto gruppi fissi di riscaldamento a infrarossi montati esternamente, 3 kW per gruppo, potenza termica totale 24 kW; quattro gruppi per lato."],
-            ["Sistema di filtrazione", "Prefiltro di ingresso per particelle superiori a 10 µm. Filtro superiore ad alta efficienza SF-700G per particelle superiori a 4 µm, efficienza di cattura ≥99%. Filtro inferiore in fibra di vetro a media efficienza."],
-            ["Quadro elettrico", "Quadro elettrico con componenti CHINT o equivalenti. Il circuito principale comprende protezione da dispersione, mancanza di fase, cortocircuito, temporizzazione e sovraccarico. Temperatura regolabile con allarme di sovratemperatura."],
-            ["Alimentazione elettrica", "380 V / 220 V, 3 fasi, 4 fili, 50 Hz; potenza totale circa 35 kW."]
-          ],
-          de: [
-            ["Produkt", "Elektrisch beheizte Fahrzeug-Lackier- und Trockenkabine"],
-            ["Modell", "GBT-SB6900-E-ECO"],
-            ["Innenabmessungen", "6900 × 3900 × 2600 mm (L × B × H)"],
-            ["Außenabmessungen", "7000 × 5000 × 3250 mm (L × B × H)"],
-            ["Kabinenaufbau", "50 mm starke EPS-Wärmedämmverbundpaneele mit beidseitig 0,4 mm starkem, farbbeschichtetem Stahlblech; Dichte 12 kg/m³. Die Dachpaneele bestehen aus 0,7 mm starkem, verzinktem Pressblech und werden auf standardisierten Anlagen geformt."],
-            ["Unterbau", "300 mm hoher, oberirdischer Abluftunterbau aus gekantetem verzinktem Stahlblech, ausgestattet mit drei Reihen 2,3 mm starkem Riffelblech und zwei Reihen verzinktem Bodengitterrost 4 × 30#. Die Stützelemente bestehen aus gekantetem verzinktem Stahlblech."],
-            ["Fronttor", "Ein dreiflügeliges Haupttor aus Stahlblech, 50 mm stark, mit EPS-Füllung und Sichtfenstern in Aluminiumrahmen. Torabmessungen: 3000 × 2500 mm (B × H), mit 5 mm starkem Einscheiben-Sicherheitsglas."],
-            ["Servicetür", "Eine Servicetür mit den Abmessungen 700 × 1800 mm (B × H), ausgestattet mit Druckverschluss und Sichtfenster im Aluminiumrahmen mit 5 mm starkem Einscheiben-Sicherheitsglas."],
-            ["Druckkammer", "Verstärkungsrippen und Tragrahmen aus gekantetem verzinktem Stahlblech. Das Kabinendachpaneel dient gleichzeitig als obere Abdeckung. Die Verbindungselemente der Filterhalter bestehen aus 0,6 mm starkem, gekantetem verzinktem Stahlblech."],
-            ["Zuluftsystem", "Zwei YDW-Spezial-Zuluftventilatoren mit jeweils 3 kW, Fabrikat Tianyi oder gleichwertig; Luftleistung je Ventilator 10.000 m³/h."],
-            ["Abluftsystem", "Ein YDW-Spezial-Abluftventilator mit 4 kW, Fabrikat Jiangsu Hengkang oder gleichwertig; Luftleistung 12.500 m³/h."],
-            ["Abluftkanal", "Die Standardausstattung umfasst zwei gerade Kanalstücke und einen Rohrbogen."],
-            ["Beleuchtungssystem", "Obere LED-Beleuchtung auf beiden Kabinenseiten. Die Leuchtenrahmen bestehen aus 0,6 mm starkem, verzinktem und pulverbeschichtetem Stahlblech. Umfang: 8 Einheiten × 4 Röhren = insgesamt 32 LED-Röhren mit jeweils 24 W."],
-            ["Heizsystem", "Acht außen montierte, fest installierte Infrarot-Heizeinheiten mit jeweils 3 kW; Gesamtheizleistung 24 kW. Je vier Einheiten sind auf jeder Kabinenseite angeordnet."],
-            ["Filtersystem", "Der Zuluft-Vorfilter erfasst Partikel größer als 10 µm. Das hocheffiziente Deckenfiltermedium SF-700G erfasst Partikel größer als 4 µm mit einem Abscheidegrad von mindestens 99 %. Im Bodenbereich wird ein Glasfaser-Filtermedium mittlerer Effizienz eingesetzt."],
-            ["Elektrische Steuerung", "Elektrische Steuerungskomponenten von CHINT oder gleichwertig. Der Hauptstromkreis verfügt über Fehlerstrom-, Phasenausfall-, Kurzschluss- und Überlastschutz sowie eine Zeitsteuerung. Einstellbare Temperaturregelung mit Übertemperaturalarm."],
-            ["Stromversorgung", "380 V / 220 V, 3-phasig, 4-Leiter, 50 Hz; Gesamtleistung ca. 35 kW."]
-          ]
+  var modelDefinitions = [
+    { code: "GBT-SB6900-E-ECO", fuel: "electric", tier: "eco" },
+    { code: "GBT-SB6900-E-PLUS", fuel: "electric", tier: "plus" },
+    { code: "GBT-SB6900-E-PRO", fuel: "electric", tier: "pro" },
+    { code: "GBT-SB6900-NG-ECO", fuel: "naturalGas", tier: "eco" },
+    { code: "GBT-SB6900-NG-PLUS", fuel: "naturalGas", tier: "plus" },
+    { code: "GBT-SB6900-NG-PRO", fuel: "naturalGas", tier: "pro" },
+    { code: "GBT-SB6900-D-ECO", fuel: "diesel", tier: "eco" },
+    { code: "GBT-SB6900-D-PLUS", fuel: "diesel", tier: "plus" },
+    { code: "GBT-SB6900-D-PRO", fuel: "diesel", tier: "pro" }
+  ];
+
+  var translations = {
+    zh: {
+      labels: {
+        product: "产品名称", model: "型号", level: "配置等级", internal: "房体内径", external: "房体外径",
+        wall: "房体系统", base: "地台", frontDoor: "正面大门", serviceDoor: "工作门", plenum: "静压室",
+        supply: "送风系统", exhaust: "排风系统", airBox: "送排风箱", duct: "排风管", heating: "加热系统",
+        lighting: "照明系统", filter: "过滤系统", control: "电控系统", power: "电源要求", note: "项目确认"
+      },
+      products: { electric: "电加热汽车喷烤漆房", naturalGas: "天然气加热汽车喷烤漆房", diesel: "柴油加热汽车喷烤漆房" },
+      levels: { eco: "低配 / ECO 标准型", plus: "中配 / PLUS 增强型", pro: "高配 / PRO 专业型" },
+      internal: "6900 × 3900 × 2600 mm（长 × 宽 × 高）",
+      external: "7000 × 5100 × 3250 mm（长 × 宽 × 高），单侧风箱",
+      serviceDoor: "1套侧置铝合金包边工作门，尺寸700 × 1800 mm（宽 × 高），配压力锁及铝合金包边钢化玻璃观察窗。",
+      plenum: "大筋支架与方管焊接结构，房体顶板兼作静压室顶板；过滤棉托架及连接件采用0.6 mm镀锌板折弯制作，便于更换耗材。",
+      airBox: "40 × 40 mm喷塑方管框架，配0.6 mm彩钢板制作。",
+      duct: "标准配置含两节直管和一个弯头。",
+      control: "正泰（CHINT）或同等级电器元件，旋钮式外挂控制箱；主回路具备漏电、缺相、短路、定时及过载保护。",
+      tiers: {
+        eco: {
+          wall: "50 mm EPS夹芯墙板，内外0.426 mm彩钢板；顶板0.7 mm镀锌板，顶部槽盒0.8 mm、底部槽盒1.2 mm。EPS芯材密度按最终技术协议确认。",
+          base: "三排2.3 mm花纹板、两排3 × 30钢格栅，底部采用镀锌板折弯支架。",
+          frontDoor: "三扇铝合金包边正面大门。",
+          supply: "两台YDW 3 kW送风机，铝芯电机（天意或同等级）。",
+          exhaust: "一台YDW 5.5 kW排风机，铝芯电机（恒康或同等级）。",
+          filter: "进风初效过滤可捕捉大于10 µm尘粒；顶部SF-600G喷胶过滤棉可捕捉大于4 µm尘粒，捕捉率≥99%；底部采用中效玻璃纤维过滤棉。"
+        },
+        plus: {
+          wall: "50 mm保温防火岩棉复合墙板，内外0.426 mm彩钢板，岩棉密度100 kg/m³；顶板0.7 mm镀锌板，顶部槽盒0.8 mm、底部槽盒1.2 mm。",
+          base: "三排2.3 mm花纹板、两排4 × 30钢格栅，底部采用镀锌板折弯支架。",
+          frontDoor: "三扇钣金正面大门。",
+          supply: "两台YDW 3 kW送风机，铜芯电机（天意或同等级）。",
+          exhaust: "一台YDW 5.5 kW排风机，铜芯电机（恒康或同等级）。",
+          filter: "进风初效过滤可捕捉大于10 µm尘粒；顶部SF-700G喷胶过滤棉可捕捉大于4 µm尘粒，捕捉率≥99%；底部采用中效玻璃纤维过滤棉。"
+        },
+        pro: {
+          wall: "50 mm保温防火岩棉复合墙板，内外0.5 mm彩钢板，岩棉密度100 kg/m³；顶板0.7 mm镀锌板，顶部槽盒0.8 mm、底部槽盒1.2 mm。",
+          base: "三排2.3 mm花纹板、两排5 × 30钢格栅，底部采用12#槽钢支架。",
+          frontDoor: "四扇铝合金玻璃正面大门。",
+          supply: "两台YDW 3 kW送风机，铜芯电机。",
+          exhaust: "一台YDW 5.5 kW排风机，铜芯电机。",
+          filter: "进风初效过滤可捕捉大于10 µm尘粒；顶部SF-700G喷胶过滤棉可捕捉大于4 µm尘粒，捕捉率≥99%；底部采用中效玻璃纤维过滤棉。"
         }
       },
-      "GBT-SB6900-E-PLUS": { status: "reserved" },
-      "GBT-SB6900-E-PRO": { status: "reserved" },
-      "GBT-SB6900-NG-ECO": { status: "reserved" },
-      "GBT-SB6900-NG-PLUS": { status: "reserved" },
-      "GBT-SB6900-NG-PRO": { status: "reserved" },
-      "GBT-SB6900-D-ECO": { status: "reserved" },
-      "GBT-SB6900-D-PLUS": { status: "reserved" },
-      "GBT-SB6900-D-PRO": { status: "reserved" }
+      heating: {
+        electric: {
+          eco: "8组红外线加热，每组3 kW，总加热功率24 kW。",
+          plus: "8组升级型豪华红外线加热，每组3 kW，总加热功率24 kW。",
+          pro: "8组升级型豪华红外线加热，每组3 kW，总加热功率24 kW。"
+        },
+        naturalGas: {
+          eco: "意大利进口利雅路FS10天然气燃烧器。",
+          plus: "意大利进口利雅路FS10天然气燃烧器。",
+          pro: "意大利进口利雅路FS20天然气燃烧器。"
+        },
+        diesel: {
+          eco: "意大利进口利雅路G10柴油燃烧器，201不锈钢热能交换器，厚度1.5 mm。",
+          plus: "意大利进口利雅路G10柴油燃烧器，201不锈钢热能交换器，厚度2.0 mm。",
+          pro: "意大利进口利雅路G10柴油燃烧器，201不锈钢热能交换器，厚度2.0 mm。"
+        }
+      },
+      lighting: {
+        electric: "顶部8组 × 4支，共32支24 W LED灯管；电加热布置不配置腰灯。灯箱框架采用0.6 mm喷粉镀锌板。",
+        fuel: "顶部8组 × 4支，共32支24 W LED灯管；腰部16组 × 2支，共32支24 W LED灯管。灯箱框架采用0.6 mm喷粉镀锌板。"
+      },
+      power: {
+        electric: "380/220 V，三相四线，50 Hz；红外线加热功率24 kW，整机总装机功率按最终电气图确认。",
+        fuel: "380/220 V，三相四线，50 Hz；参考电气负载约12 kW（不含燃烧器热功率），最终装机功率按项目电气图确认。"
+      },
+      note: "电压、燃料接口、排风路径及当地安全要求须在生产前通过双方技术协议确认。"
+    },
+    en: {
+      labels: {
+        product: "Product", model: "Model", level: "Configuration level", internal: "Internal size", external: "External size",
+        wall: "Booth body", base: "Base platform", frontDoor: "Front door", serviceDoor: "Service door", plenum: "Plenum chamber",
+        supply: "Air supply system", exhaust: "Exhaust system", airBox: "Air box", duct: "Exhaust duct", heating: "Heating system",
+        lighting: "Lighting system", filter: "Filter system", control: "Electric control", power: "Power requirement", note: "Project confirmation"
+      },
+      products: { electric: "Electric Heating Automotive Spray / Baking Booth", naturalGas: "Natural Gas Heating Automotive Spray / Baking Booth", diesel: "Diesel Heating Automotive Spray / Baking Booth" },
+      levels: { eco: "Entry-level / ECO Standard", plus: "Mid-range / PLUS Enhanced", pro: "High-end / PRO Professional" },
+      internal: "6900 × 3900 × 2600 mm (L × W × H)",
+      external: "7000 × 5100 × 3250 mm (L × W × H), single-side air box",
+      serviceDoor: "One side-mounted service door, 700 × 1800 mm (W × H), with aluminum-alloy edging, pressure lock and tempered-glass viewing window.",
+      plenum: "Welded reinforcing-rib and square-tube structure. The booth roof doubles as the plenum roof; filter supports and connectors are made from 0.6 mm bent galvanized sheet for convenient filter replacement.",
+      airBox: "40 × 40 mm powder-coated square-tube frame clad with 0.6 mm color-coated steel sheet.",
+      duct: "Standard configuration includes two straight duct sections and one elbow.",
+      control: "CHINT or equivalent electrical components in an external rotary control box. The main circuit includes leakage, phase-loss, short-circuit, timing and overload protection.",
+      tiers: {
+        eco: {
+          wall: "50 mm EPS sandwich wall panels with 0.426 mm color-coated steel sheets on both sides; 0.7 mm galvanized roof panel, 0.8 mm top channel and 1.2 mm bottom channel. EPS core density is confirmed in the final technical agreement.",
+          base: "Three rows of 2.3 mm checker plate and two rows of 3 × 30 steel grating, supported by bent galvanized-sheet brackets.",
+          frontDoor: "Three-leaf main door with aluminum-alloy edging.",
+          supply: "Two YDW 3 kW supply fans with aluminum-wound motors, Tianyi or equivalent.",
+          exhaust: "One YDW 5.5 kW exhaust fan with aluminum-wound motor, Hengkang or equivalent.",
+          filter: "Inlet pre-filter captures particles above 10 µm. SF-600G adhesive ceiling filter captures particles above 4 µm with at least 99% efficiency. Medium-efficiency fiberglass floor filter."
+        },
+        plus: {
+          wall: "50 mm fire-resistant rock-wool composite wall panels with 0.426 mm color-coated steel sheets on both sides and 100 kg/m³ rock-wool density; 0.7 mm galvanized roof panel, 0.8 mm top channel and 1.2 mm bottom channel.",
+          base: "Three rows of 2.3 mm checker plate and two rows of 4 × 30 steel grating, supported by bent galvanized-sheet brackets.",
+          frontDoor: "Three-leaf sheet-metal main door.",
+          supply: "Two YDW 3 kW supply fans with copper-wound motors, Tianyi or equivalent.",
+          exhaust: "One YDW 5.5 kW exhaust fan with copper-wound motor, Hengkang or equivalent.",
+          filter: "Inlet pre-filter captures particles above 10 µm. SF-700G adhesive ceiling filter captures particles above 4 µm with at least 99% efficiency. Medium-efficiency fiberglass floor filter."
+        },
+        pro: {
+          wall: "50 mm fire-resistant rock-wool composite wall panels with 0.5 mm color-coated steel sheets on both sides and 100 kg/m³ rock-wool density; 0.7 mm galvanized roof panel, 0.8 mm top channel and 1.2 mm bottom channel.",
+          base: "Three rows of 2.3 mm checker plate and two rows of 5 × 30 steel grating, supported by No. 12 channel steel.",
+          frontDoor: "Four-leaf aluminum-alloy glazed main door.",
+          supply: "Two YDW 3 kW supply fans with copper-wound motors.",
+          exhaust: "One YDW 5.5 kW exhaust fan with copper-wound motor.",
+          filter: "Inlet pre-filter captures particles above 10 µm. SF-700G adhesive ceiling filter captures particles above 4 µm with at least 99% efficiency. Medium-efficiency fiberglass floor filter."
+        }
+      },
+      heating: {
+        electric: {
+          eco: "Eight infrared heating sets, 3 kW each, total heating power 24 kW.",
+          plus: "Eight upgraded luxury infrared heating sets, 3 kW each, total heating power 24 kW.",
+          pro: "Eight upgraded luxury infrared heating sets, 3 kW each, total heating power 24 kW."
+        },
+        naturalGas: {
+          eco: "Imported Italian Riello FS10 natural-gas burner.",
+          plus: "Imported Italian Riello FS10 natural-gas burner.",
+          pro: "Imported Italian Riello FS20 natural-gas burner."
+        },
+        diesel: {
+          eco: "Imported Italian Riello G10 diesel burner with 1.5 mm 201 stainless-steel heat exchanger.",
+          plus: "Imported Italian Riello G10 diesel burner with 2.0 mm 201 stainless-steel heat exchanger.",
+          pro: "Imported Italian Riello G10 diesel burner with 2.0 mm 201 stainless-steel heat exchanger."
+        }
+      },
+      lighting: {
+        electric: "Ceiling lighting: 8 sets × 4 tubes = 32 pcs 24 W LED tubes. No waist lights are fitted with the electric-heating layout. Light-box frames use 0.6 mm powder-coated galvanized sheet.",
+        fuel: "Ceiling lighting: 8 sets × 4 tubes = 32 pcs 24 W LED tubes. Waist lighting: 16 sets × 2 tubes = 32 pcs 24 W LED tubes. Light-box frames use 0.6 mm powder-coated galvanized sheet."
+      },
+      power: {
+        electric: "380/220 V, 3 phase 4 wire, 50 Hz. Infrared heating load is 24 kW; final total connected load is confirmed by the project electrical drawing.",
+        fuel: "380/220 V, 3 phase 4 wire, 50 Hz. Reference electrical load is approx. 12 kW, excluding burner thermal output; final connected load is confirmed by the project electrical drawing."
+      },
+      note: "Voltage, fuel connection, exhaust routing and local safety requirements must be confirmed in the mutually approved technical agreement before production."
+    },
+    fr: {
+      labels: {
+        product: "Produit", model: "Modèle", level: "Niveau de configuration", internal: "Dimensions intérieures", external: "Dimensions extérieures",
+        wall: "Structure de cabine", base: "Soubassement", frontDoor: "Porte frontale", serviceDoor: "Porte de service", plenum: "Plénum",
+        supply: "Système de soufflage", exhaust: "Système d’extraction", airBox: "Caisson d’air", duct: "Conduit d’extraction", heating: "Système de chauffage",
+        lighting: "Système d’éclairage", filter: "Système de filtration", control: "Commande électrique", power: "Alimentation électrique", note: "Validation du projet"
+      },
+      products: { electric: "Cabine automobile de peinture et d’étuvage à chauffage électrique", naturalGas: "Cabine automobile de peinture et d’étuvage au gaz naturel", diesel: "Cabine automobile de peinture et d’étuvage au diesel" },
+      levels: { eco: "Entrée de gamme / ECO Standard", plus: "Milieu de gamme / PLUS Renforcée", pro: "Haut de gamme / PRO Professionnelle" },
+      internal: "6900 × 3900 × 2600 mm (L × l × H)",
+      external: "7000 × 5100 × 3250 mm (L × l × H), caisson d’air latéral",
+      serviceDoor: "Une porte de service latérale de 700 × 1800 mm (l × H), bordée d’aluminium, avec serrure à pression et fenêtre en verre trempé.",
+      plenum: "Structure soudée avec nervures renforcées et tubes carrés. Le toit de la cabine sert de toit au plénum ; supports de filtres et raccords en tôle galvanisée pliée de 0,6 mm pour faciliter le remplacement.",
+      airBox: "Cadre en tube carré 40 × 40 mm thermolaqué, habillé de tôle d’acier prélaquée de 0,6 mm.",
+      duct: "La configuration standard comprend deux sections droites et un coude.",
+      control: "Composants électriques CHINT ou équivalents dans un coffret externe à commandes rotatives. Le circuit principal comprend les protections contre fuite, perte de phase, court-circuit, temporisation et surcharge.",
+      tiers: {
+        eco: {
+          wall: "Panneaux sandwich EPS de 50 mm avec parements acier prélaqué de 0,426 mm sur les deux faces ; toit galvanisé de 0,7 mm, profil supérieur de 0,8 mm et profil inférieur de 1,2 mm. La densité EPS est confirmée dans l’accord technique final.",
+          base: "Trois rangées de tôle antidérapante de 2,3 mm et deux rangées de caillebotis acier 3 × 30, sur supports en tôle galvanisée pliée.",
+          frontDoor: "Porte principale à trois vantaux bordés d’aluminium.",
+          supply: "Deux ventilateurs de soufflage YDW de 3 kW à bobinage aluminium, Tianyi ou équivalent.",
+          exhaust: "Un ventilateur d’extraction YDW de 5,5 kW à bobinage aluminium, Hengkang ou équivalent.",
+          filter: "Préfiltre d’entrée pour particules supérieures à 10 µm. Filtre plafond adhésif SF-600G pour particules supérieures à 4 µm, efficacité ≥99 %. Filtre de sol en fibre de verre à efficacité moyenne."
+        },
+        plus: {
+          wall: "Panneaux composites coupe-feu en laine de roche de 50 mm, parements acier prélaqué de 0,426 mm sur les deux faces, densité 100 kg/m³ ; toit galvanisé de 0,7 mm, profil supérieur de 0,8 mm et profil inférieur de 1,2 mm.",
+          base: "Trois rangées de tôle antidérapante de 2,3 mm et deux rangées de caillebotis acier 4 × 30, sur supports en tôle galvanisée pliée.",
+          frontDoor: "Porte principale en tôle à trois vantaux.",
+          supply: "Deux ventilateurs de soufflage YDW de 3 kW à bobinage cuivre, Tianyi ou équivalent.",
+          exhaust: "Un ventilateur d’extraction YDW de 5,5 kW à bobinage cuivre, Hengkang ou équivalent.",
+          filter: "Préfiltre d’entrée pour particules supérieures à 10 µm. Filtre plafond adhésif SF-700G pour particules supérieures à 4 µm, efficacité ≥99 %. Filtre de sol en fibre de verre à efficacité moyenne."
+        },
+        pro: {
+          wall: "Panneaux composites coupe-feu en laine de roche de 50 mm, parements acier prélaqué de 0,5 mm sur les deux faces, densité 100 kg/m³ ; toit galvanisé de 0,7 mm, profil supérieur de 0,8 mm et profil inférieur de 1,2 mm.",
+          base: "Trois rangées de tôle antidérapante de 2,3 mm et deux rangées de caillebotis acier 5 × 30, sur profilé U n°12.",
+          frontDoor: "Porte principale vitrée à quatre vantaux en aluminium.",
+          supply: "Deux ventilateurs de soufflage YDW de 3 kW à bobinage cuivre.",
+          exhaust: "Un ventilateur d’extraction YDW de 5,5 kW à bobinage cuivre.",
+          filter: "Préfiltre d’entrée pour particules supérieures à 10 µm. Filtre plafond adhésif SF-700G pour particules supérieures à 4 µm, efficacité ≥99 %. Filtre de sol en fibre de verre à efficacité moyenne."
+        }
+      },
+      heating: {
+        electric: { eco: "Huit ensembles infrarouges de 3 kW chacun, puissance totale 24 kW.", plus: "Huit ensembles infrarouges renforcés de 3 kW chacun, puissance totale 24 kW.", pro: "Huit ensembles infrarouges renforcés de 3 kW chacun, puissance totale 24 kW." },
+        naturalGas: { eco: "Brûleur gaz naturel italien Riello FS10 importé.", plus: "Brûleur gaz naturel italien Riello FS10 importé.", pro: "Brûleur gaz naturel italien Riello FS20 importé." },
+        diesel: { eco: "Brûleur diesel italien Riello G10 importé avec échangeur inox 201 de 1,5 mm.", plus: "Brûleur diesel italien Riello G10 importé avec échangeur inox 201 de 2,0 mm.", pro: "Brûleur diesel italien Riello G10 importé avec échangeur inox 201 de 2,0 mm." }
+      },
+      lighting: {
+        electric: "Éclairage plafond : 8 ensembles × 4 tubes = 32 tubes LED de 24 W. Aucun éclairage latéral bas avec l’implantation électrique. Caissons en tôle galvanisée thermolaquée de 0,6 mm.",
+        fuel: "Éclairage plafond : 8 ensembles × 4 tubes = 32 tubes LED de 24 W. Éclairage latéral : 16 ensembles × 2 tubes = 32 tubes LED de 24 W. Caissons en tôle galvanisée thermolaquée de 0,6 mm."
+      },
+      power: {
+        electric: "380/220 V, triphasé 4 fils, 50 Hz. Chauffage infrarouge 24 kW ; puissance totale raccordée selon le schéma électrique du projet.",
+        fuel: "380/220 V, triphasé 4 fils, 50 Hz. Charge électrique indicative env. 12 kW, hors puissance thermique du brûleur ; valeur finale selon le schéma du projet."
+      },
+      note: "La tension, le raccordement combustible, le tracé d’extraction et les exigences locales de sécurité doivent être validés dans l’accord technique avant production."
+    },
+    es: {
+      labels: {
+        product: "Producto", model: "Modelo", level: "Nivel de configuración", internal: "Dimensiones internas", external: "Dimensiones externas",
+        wall: "Estructura de cabina", base: "Base", frontDoor: "Puerta frontal", serviceDoor: "Puerta de servicio", plenum: "Cámara plenum",
+        supply: "Sistema de impulsión", exhaust: "Sistema de extracción", airBox: "Caja de aire", duct: "Conducto de extracción", heating: "Sistema de calefacción",
+        lighting: "Sistema de iluminación", filter: "Sistema de filtración", control: "Control eléctrico", power: "Alimentación eléctrica", note: "Confirmación del proyecto"
+      },
+      products: { electric: "Cabina de pintura y secado automotriz con calefacción eléctrica", naturalGas: "Cabina de pintura y secado automotriz con gas natural", diesel: "Cabina de pintura y secado automotriz con diésel" },
+      levels: { eco: "Gama básica / ECO Estándar", plus: "Gama media / PLUS Mejorada", pro: "Gama alta / PRO Profesional" },
+      internal: "6900 × 3900 × 2600 mm (L × An × Al)",
+      external: "7000 × 5100 × 3250 mm (L × An × Al), caja de aire lateral",
+      serviceDoor: "Una puerta de servicio lateral de 700 × 1800 mm (An × Al), con borde de aluminio, cerradura de presión y ventana de vidrio templado.",
+      plenum: "Estructura soldada con nervios reforzados y tubo cuadrado. El techo de la cabina sirve como techo del plenum; soportes de filtro y conectores de chapa galvanizada plegada de 0,6 mm para facilitar el mantenimiento.",
+      airBox: "Bastidor de tubo cuadrado de 40 × 40 mm con pintura en polvo y revestimiento de chapa prepintada de 0,6 mm.",
+      duct: "La configuración estándar incluye dos tramos rectos y un codo.",
+      control: "Componentes eléctricos CHINT o equivalentes en caja de control externa con mandos giratorios. Protección contra fugas, pérdida de fase, cortocircuito, temporización y sobrecarga.",
+      tiers: {
+        eco: {
+          wall: "Paneles sándwich EPS de 50 mm con chapa prepintada de 0,426 mm en ambas caras; techo galvanizado de 0,7 mm, perfil superior de 0,8 mm y perfil inferior de 1,2 mm. La densidad del EPS se confirma en el acuerdo técnico final.",
+          base: "Tres filas de chapa estriada de 2,3 mm y dos filas de rejilla de acero 3 × 30, con soportes de chapa galvanizada plegada.",
+          frontDoor: "Puerta principal de tres hojas con borde de aluminio.",
+          supply: "Dos ventiladores de impulsión YDW de 3 kW con bobinado de aluminio, Tianyi o equivalente.",
+          exhaust: "Un ventilador de extracción YDW de 5,5 kW con bobinado de aluminio, Hengkang o equivalente.",
+          filter: "Prefiltro de entrada para partículas mayores de 10 µm. Filtro adhesivo de techo SF-600G para partículas mayores de 4 µm, eficiencia ≥99 %. Filtro de suelo de fibra de vidrio de eficiencia media."
+        },
+        plus: {
+          wall: "Paneles compuestos ignífugos de lana de roca de 50 mm, chapa prepintada de 0,426 mm en ambas caras y densidad 100 kg/m³; techo galvanizado de 0,7 mm, perfil superior de 0,8 mm y perfil inferior de 1,2 mm.",
+          base: "Tres filas de chapa estriada de 2,3 mm y dos filas de rejilla de acero 4 × 30, con soportes de chapa galvanizada plegada.",
+          frontDoor: "Puerta principal de chapa de tres hojas.",
+          supply: "Dos ventiladores de impulsión YDW de 3 kW con bobinado de cobre, Tianyi o equivalente.",
+          exhaust: "Un ventilador de extracción YDW de 5,5 kW con bobinado de cobre, Hengkang o equivalente.",
+          filter: "Prefiltro de entrada para partículas mayores de 10 µm. Filtro adhesivo de techo SF-700G para partículas mayores de 4 µm, eficiencia ≥99 %. Filtro de suelo de fibra de vidrio de eficiencia media."
+        },
+        pro: {
+          wall: "Paneles compuestos ignífugos de lana de roca de 50 mm, chapa prepintada de 0,5 mm en ambas caras y densidad 100 kg/m³; techo galvanizado de 0,7 mm, perfil superior de 0,8 mm y perfil inferior de 1,2 mm.",
+          base: "Tres filas de chapa estriada de 2,3 mm y dos filas de rejilla de acero 5 × 30, sobre acero canal n.º 12.",
+          frontDoor: "Puerta principal acristalada de aluminio de cuatro hojas.",
+          supply: "Dos ventiladores de impulsión YDW de 3 kW con bobinado de cobre.",
+          exhaust: "Un ventilador de extracción YDW de 5,5 kW con bobinado de cobre.",
+          filter: "Prefiltro de entrada para partículas mayores de 10 µm. Filtro adhesivo de techo SF-700G para partículas mayores de 4 µm, eficiencia ≥99 %. Filtro de suelo de fibra de vidrio de eficiencia media."
+        }
+      },
+      heating: {
+        electric: { eco: "Ocho conjuntos infrarrojos de 3 kW cada uno, potencia total 24 kW.", plus: "Ocho conjuntos infrarrojos mejorados de 3 kW cada uno, potencia total 24 kW.", pro: "Ocho conjuntos infrarrojos mejorados de 3 kW cada uno, potencia total 24 kW." },
+        naturalGas: { eco: "Quemador de gas natural italiano Riello FS10 importado.", plus: "Quemador de gas natural italiano Riello FS10 importado.", pro: "Quemador de gas natural italiano Riello FS20 importado." },
+        diesel: { eco: "Quemador diésel italiano Riello G10 importado con intercambiador de acero inoxidable 201 de 1,5 mm.", plus: "Quemador diésel italiano Riello G10 importado con intercambiador de acero inoxidable 201 de 2,0 mm.", pro: "Quemador diésel italiano Riello G10 importado con intercambiador de acero inoxidable 201 de 2,0 mm." }
+      },
+      lighting: {
+        electric: "Iluminación de techo: 8 conjuntos × 4 tubos = 32 tubos LED de 24 W. La versión eléctrica no incorpora luces laterales bajas. Cajas de luz en chapa galvanizada de 0,6 mm con pintura en polvo.",
+        fuel: "Iluminación de techo: 8 conjuntos × 4 tubos = 32 tubos LED de 24 W. Iluminación lateral: 16 conjuntos × 2 tubos = 32 tubos LED de 24 W. Cajas de luz en chapa galvanizada de 0,6 mm con pintura en polvo."
+      },
+      power: {
+        electric: "380/220 V, trifásico 4 hilos, 50 Hz. Calefacción infrarroja de 24 kW; carga total según el plano eléctrico del proyecto.",
+        fuel: "380/220 V, trifásico 4 hilos, 50 Hz. Carga eléctrica de referencia aprox. 12 kW, sin incluir la potencia térmica del quemador; valor final según el plano del proyecto."
+      },
+      note: "La tensión, la conexión de combustible, el recorrido de extracción y los requisitos locales de seguridad deben confirmarse en el acuerdo técnico antes de producción."
+    },
+    it: {
+      labels: {
+        product: "Prodotto", model: "Modello", level: "Livello di configurazione", internal: "Dimensioni interne", external: "Dimensioni esterne",
+        wall: "Struttura cabina", base: "Basamento", frontDoor: "Portone frontale", serviceDoor: "Porta di servizio", plenum: "Camera di pressurizzazione",
+        supply: "Sistema di mandata", exhaust: "Sistema di estrazione", airBox: "Cassa aria", duct: "Condotto di scarico", heating: "Sistema di riscaldamento",
+        lighting: "Sistema di illuminazione", filter: "Sistema di filtrazione", control: "Quadro elettrico", power: "Alimentazione elettrica", note: "Conferma progetto"
+      },
+      products: { electric: "Cabina auto di verniciatura e cottura con riscaldamento elettrico", naturalGas: "Cabina auto di verniciatura e cottura a gas naturale", diesel: "Cabina auto di verniciatura e cottura diesel" },
+      levels: { eco: "Fascia base / ECO Standard", plus: "Fascia media / PLUS Potenziata", pro: "Fascia alta / PRO Professionale" },
+      internal: "6900 × 3900 × 2600 mm (L × P × H)",
+      external: "7000 × 5100 × 3250 mm (L × P × H), cassa aria laterale",
+      serviceDoor: "Una porta di servizio laterale da 700 × 1800 mm (L × H), con bordo in alluminio, serratura a pressione e finestra in vetro temperato.",
+      plenum: "Struttura saldata con nervature rinforzate e tubi quadri. Il tetto cabina funge da tetto del plenum; supporti filtro e raccordi in lamiera zincata piegata da 0,6 mm per una facile sostituzione.",
+      airBox: "Telaio in tubo quadro 40 × 40 mm verniciato a polvere con rivestimento in lamiera preverniciata da 0,6 mm.",
+      duct: "La configurazione standard include due tratti diritti e una curva.",
+      control: "Componenti elettrici CHINT o equivalenti in quadro esterno con comandi rotativi. Protezioni da dispersione, mancanza fase, cortocircuito, temporizzazione e sovraccarico.",
+      tiers: {
+        eco: {
+          wall: "Pannelli sandwich EPS da 50 mm con lamiera preverniciata da 0,426 mm su entrambi i lati; tetto zincato da 0,7 mm, profilo superiore da 0,8 mm e inferiore da 1,2 mm. La densità EPS è confermata nell’accordo tecnico finale.",
+          base: "Tre file di lamiera mandorlata da 2,3 mm e due file di grigliato in acciaio 3 × 30, con supporti in lamiera zincata piegata.",
+          frontDoor: "Portone principale a tre ante con bordo in alluminio.",
+          supply: "Due ventilatori di mandata YDW da 3 kW con avvolgimento in alluminio, Tianyi o equivalente.",
+          exhaust: "Un ventilatore di estrazione YDW da 5,5 kW con avvolgimento in alluminio, Hengkang o equivalente.",
+          filter: "Prefiltro ingresso per particelle oltre 10 µm. Filtro adesivo a soffitto SF-600G per particelle oltre 4 µm, efficienza ≥99%. Filtro a pavimento in fibra di vetro a media efficienza."
+        },
+        plus: {
+          wall: "Pannelli compositi ignifughi in lana di roccia da 50 mm, lamiera preverniciata da 0,426 mm su entrambi i lati, densità 100 kg/m³; tetto zincato da 0,7 mm, profilo superiore da 0,8 mm e inferiore da 1,2 mm.",
+          base: "Tre file di lamiera mandorlata da 2,3 mm e due file di grigliato in acciaio 4 × 30, con supporti in lamiera zincata piegata.",
+          frontDoor: "Portone principale in lamiera a tre ante.",
+          supply: "Due ventilatori di mandata YDW da 3 kW con avvolgimento in rame, Tianyi o equivalente.",
+          exhaust: "Un ventilatore di estrazione YDW da 5,5 kW con avvolgimento in rame, Hengkang o equivalente.",
+          filter: "Prefiltro ingresso per particelle oltre 10 µm. Filtro adesivo a soffitto SF-700G per particelle oltre 4 µm, efficienza ≥99%. Filtro a pavimento in fibra di vetro a media efficienza."
+        },
+        pro: {
+          wall: "Pannelli compositi ignifughi in lana di roccia da 50 mm, lamiera preverniciata da 0,5 mm su entrambi i lati, densità 100 kg/m³; tetto zincato da 0,7 mm, profilo superiore da 0,8 mm e inferiore da 1,2 mm.",
+          base: "Tre file di lamiera mandorlata da 2,3 mm e due file di grigliato in acciaio 5 × 30, su profilato U n. 12.",
+          frontDoor: "Portone principale vetrato in alluminio a quattro ante.",
+          supply: "Due ventilatori di mandata YDW da 3 kW con avvolgimento in rame.",
+          exhaust: "Un ventilatore di estrazione YDW da 5,5 kW con avvolgimento in rame.",
+          filter: "Prefiltro ingresso per particelle oltre 10 µm. Filtro adesivo a soffitto SF-700G per particelle oltre 4 µm, efficienza ≥99%. Filtro a pavimento in fibra di vetro a media efficienza."
+        }
+      },
+      heating: {
+        electric: { eco: "Otto gruppi infrarossi da 3 kW ciascuno, potenza totale 24 kW.", plus: "Otto gruppi infrarossi potenziati da 3 kW ciascuno, potenza totale 24 kW.", pro: "Otto gruppi infrarossi potenziati da 3 kW ciascuno, potenza totale 24 kW." },
+        naturalGas: { eco: "Bruciatore a gas naturale italiano Riello FS10 importato.", plus: "Bruciatore a gas naturale italiano Riello FS10 importato.", pro: "Bruciatore a gas naturale italiano Riello FS20 importato." },
+        diesel: { eco: "Bruciatore diesel italiano Riello G10 importato con scambiatore inox 201 da 1,5 mm.", plus: "Bruciatore diesel italiano Riello G10 importato con scambiatore inox 201 da 2,0 mm.", pro: "Bruciatore diesel italiano Riello G10 importato con scambiatore inox 201 da 2,0 mm." }
+      },
+      lighting: {
+        electric: "Illuminazione a soffitto: 8 gruppi × 4 tubi = 32 tubi LED da 24 W. La versione elettrica non prevede luci laterali basse. Cassonetti in lamiera zincata da 0,6 mm verniciata a polvere.",
+        fuel: "Illuminazione a soffitto: 8 gruppi × 4 tubi = 32 tubi LED da 24 W. Illuminazione laterale: 16 gruppi × 2 tubi = 32 tubi LED da 24 W. Cassonetti in lamiera zincata da 0,6 mm verniciata a polvere."
+      },
+      power: {
+        electric: "380/220 V, trifase 4 fili, 50 Hz. Riscaldamento infrarosso 24 kW; carico totale secondo lo schema elettrico del progetto.",
+        fuel: "380/220 V, trifase 4 fili, 50 Hz. Carico elettrico indicativo circa 12 kW, esclusa la potenza termica del bruciatore; valore finale secondo lo schema del progetto."
+      },
+      note: "Tensione, collegamento combustibile, percorso di estrazione e requisiti di sicurezza locali devono essere confermati nell’accordo tecnico prima della produzione."
+    },
+    de: {
+      labels: {
+        product: "Produkt", model: "Modell", level: "Ausführungsstufe", internal: "Innenabmessungen", external: "Außenabmessungen",
+        wall: "Kabinenaufbau", base: "Unterbau", frontDoor: "Fronttor", serviceDoor: "Servicetür", plenum: "Druckkammer",
+        supply: "Zuluftsystem", exhaust: "Abluftsystem", airBox: "Luftkasten", duct: "Abluftkanal", heating: "Heizsystem",
+        lighting: "Beleuchtungssystem", filter: "Filtersystem", control: "Elektrische Steuerung", power: "Stromversorgung", note: "Projektbestätigung"
+      },
+      products: { electric: "Elektrisch beheizte Fahrzeug-Lackier- und Trockenkabine", naturalGas: "Erdgasbeheizte Fahrzeug-Lackier- und Trockenkabine", diesel: "Dieselbeheizte Fahrzeug-Lackier- und Trockenkabine" },
+      levels: { eco: "Einstieg / ECO Standard", plus: "Mittelklasse / PLUS Verstärkt", pro: "Oberklasse / PRO Professionell" },
+      internal: "6900 × 3900 × 2600 mm (L × B × H)",
+      external: "7000 × 5100 × 3250 mm (L × B × H), seitlicher Luftkasten",
+      serviceDoor: "Eine seitliche Servicetür 700 × 1800 mm (B × H) mit Aluminium-Einfassung, Druckverschluss und Sichtfenster aus Einscheiben-Sicherheitsglas.",
+      plenum: "Geschweißte Konstruktion aus Verstärkungsrippen und Vierkantrohren. Das Kabinendach dient zugleich als Druckkammerdach; Filterhalter und Verbinder aus 0,6 mm gekantetem verzinktem Blech erleichtern den Filterwechsel.",
+      airBox: "Pulverbeschichteter Vierkantrohrrahmen 40 × 40 mm mit Verkleidung aus 0,6 mm farbbeschichtetem Stahlblech.",
+      duct: "Standardausstattung mit zwei geraden Kanalstücken und einem Bogen.",
+      control: "Elektrische Komponenten von CHINT oder gleichwertig in externem Drehschalter-Schaltschrank. Schutz gegen Fehlerstrom, Phasenausfall, Kurzschluss und Überlast sowie Zeitsteuerung.",
+      tiers: {
+        eco: {
+          wall: "50-mm-EPS-Sandwichpaneele mit beidseitig 0,426 mm farbbeschichtetem Stahlblech; 0,7 mm verzinktes Dachblech, 0,8 mm oberes und 1,2 mm unteres Profil. Die EPS-Kerndichte wird in der finalen technischen Vereinbarung bestätigt.",
+          base: "Drei Reihen 2,3-mm-Riffelblech und zwei Reihen Stahlgitterrost 3 × 30 auf Haltern aus gekantetem verzinktem Blech.",
+          frontDoor: "Dreiflügeliges Haupttor mit Aluminium-Einfassung.",
+          supply: "Zwei YDW-Zuluftventilatoren mit je 3 kW und Aluminiumwicklung, Tianyi oder gleichwertig.",
+          exhaust: "Ein YDW-Abluftventilator mit 5,5 kW und Aluminiumwicklung, Hengkang oder gleichwertig.",
+          filter: "Zuluft-Vorfilter für Partikel über 10 µm. Haftendes Deckenfiltermedium SF-600G für Partikel über 4 µm, Abscheidegrad ≥99 %. Mittelfeines Glasfaser-Bodenfiltermedium."
+        },
+        plus: {
+          wall: "50-mm-Brandschutz-Verbundpaneele aus Steinwolle mit beidseitig 0,426 mm farbbeschichtetem Stahlblech und 100 kg/m³ Dichte; 0,7 mm verzinktes Dachblech, 0,8 mm oberes und 1,2 mm unteres Profil.",
+          base: "Drei Reihen 2,3-mm-Riffelblech und zwei Reihen Stahlgitterrost 4 × 30 auf Haltern aus gekantetem verzinktem Blech.",
+          frontDoor: "Dreiflügeliges Haupttor aus Stahlblech.",
+          supply: "Zwei YDW-Zuluftventilatoren mit je 3 kW und Kupferwicklung, Tianyi oder gleichwertig.",
+          exhaust: "Ein YDW-Abluftventilator mit 5,5 kW und Kupferwicklung, Hengkang oder gleichwertig.",
+          filter: "Zuluft-Vorfilter für Partikel über 10 µm. Haftendes Deckenfiltermedium SF-700G für Partikel über 4 µm, Abscheidegrad ≥99 %. Mittelfeines Glasfaser-Bodenfiltermedium."
+        },
+        pro: {
+          wall: "50-mm-Brandschutz-Verbundpaneele aus Steinwolle mit beidseitig 0,5 mm farbbeschichtetem Stahlblech und 100 kg/m³ Dichte; 0,7 mm verzinktes Dachblech, 0,8 mm oberes und 1,2 mm unteres Profil.",
+          base: "Drei Reihen 2,3-mm-Riffelblech und zwei Reihen Stahlgitterrost 5 × 30 auf U-Profil-Unterbau Nr. 12.",
+          frontDoor: "Vierflügeliges verglastes Haupttor aus Aluminium.",
+          supply: "Zwei YDW-Zuluftventilatoren mit je 3 kW und Kupferwicklung.",
+          exhaust: "Ein YDW-Abluftventilator mit 5,5 kW und Kupferwicklung.",
+          filter: "Zuluft-Vorfilter für Partikel über 10 µm. Haftendes Deckenfiltermedium SF-700G für Partikel über 4 µm, Abscheidegrad ≥99 %. Mittelfeines Glasfaser-Bodenfiltermedium."
+        }
+      },
+      heating: {
+        electric: { eco: "Acht Infrarot-Heizeinheiten mit je 3 kW, Gesamtheizleistung 24 kW.", plus: "Acht verstärkte Infrarot-Heizeinheiten mit je 3 kW, Gesamtheizleistung 24 kW.", pro: "Acht verstärkte Infrarot-Heizeinheiten mit je 3 kW, Gesamtheizleistung 24 kW." },
+        naturalGas: { eco: "Importierter italienischer Riello-FS10-Erdgasbrenner.", plus: "Importierter italienischer Riello-FS10-Erdgasbrenner.", pro: "Importierter italienischer Riello-FS20-Erdgasbrenner." },
+        diesel: { eco: "Importierter italienischer Riello-G10-Dieselbrenner mit 1,5 mm Wärmetauscher aus Edelstahl 201.", plus: "Importierter italienischer Riello-G10-Dieselbrenner mit 2,0 mm Wärmetauscher aus Edelstahl 201.", pro: "Importierter italienischer Riello-G10-Dieselbrenner mit 2,0 mm Wärmetauscher aus Edelstahl 201." }
+      },
+      lighting: {
+        electric: "Deckenbeleuchtung: 8 Einheiten × 4 Röhren = 32 LED-Röhren mit 24 W. Bei elektrischer Heizung entfallen seitliche Hüftleuchten. Leuchtenkästen aus 0,6 mm pulverbeschichtetem verzinktem Blech.",
+        fuel: "Deckenbeleuchtung: 8 Einheiten × 4 Röhren = 32 LED-Röhren mit 24 W. Seitenbeleuchtung: 16 Einheiten × 2 Röhren = 32 LED-Röhren mit 24 W. Leuchtenkästen aus 0,6 mm pulverbeschichtetem verzinktem Blech."
+      },
+      power: {
+        electric: "380/220 V, 3-phasig, 4-Leiter, 50 Hz. Infrarotheizung 24 kW; gesamte Anschlussleistung gemäß projektbezogenem Stromlaufplan.",
+        fuel: "380/220 V, 3-phasig, 4-Leiter, 50 Hz. Elektrische Referenzlast ca. 12 kW, ohne thermische Brennerleistung; Endwert gemäß projektbezogenem Stromlaufplan."
+      },
+      note: "Spannung, Brennstoffanschluss, Abluftführung und örtliche Sicherheitsanforderungen sind vor Produktionsbeginn in der technischen Vereinbarung zu bestätigen."
     }
   };
+
+  function buildItems(locale, model) {
+    var text = translations[locale];
+    var tier = text.tiers[model.tier];
+    var fuelLighting = model.fuel === "electric" ? text.lighting.electric : text.lighting.fuel;
+    var power = model.fuel === "electric" ? text.power.electric : text.power.fuel;
+
+    return [
+      [text.labels.product, text.products[model.fuel]],
+      [text.labels.model, model.code],
+      [text.labels.level, text.levels[model.tier]],
+      [text.labels.internal, text.internal],
+      [text.labels.external, text.external],
+      [text.labels.wall, tier.wall],
+      [text.labels.base, tier.base],
+      [text.labels.frontDoor, tier.frontDoor],
+      [text.labels.serviceDoor, text.serviceDoor],
+      [text.labels.plenum, text.plenum],
+      [text.labels.supply, tier.supply],
+      [text.labels.exhaust, tier.exhaust],
+      [text.labels.airBox, text.airBox],
+      [text.labels.duct, text.duct],
+      [text.labels.heating, text.heating[model.fuel][model.tier]],
+      [text.labels.lighting, fuelLighting],
+      [text.labels.filter, tier.filter],
+      [text.labels.control, text.control],
+      [text.labels.power, power],
+      [text.labels.note, text.note]
+    ];
+  }
+
+  var models = {};
+  modelDefinitions.forEach(function (model) {
+    var locales = {};
+    Object.keys(translations).forEach(function (locale) {
+      locales[locale] = buildItems(locale, model);
+    });
+    models[model.code] = { status: "complete", locales: locales };
+  });
+
+  window.GubotCatalogSpecifications = { models: models };
 })();
