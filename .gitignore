@@ -9,6 +9,7 @@ tmp/
 # Local-only packaging artifacts
 *.zip
 .deploy/
+output/
 
 # Original source folders; optimized website assets are stored in SEO-friendly folders
 assets/产品图片/

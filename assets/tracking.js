@@ -76,6 +76,16 @@ window.GUBOT_GTM_ID = window.GUBOT_GTM_ID || "GTM-K4MXJDVG";
       });
     });
 
+    document.querySelectorAll("a[href*='.pdf']").forEach((link) => {
+      link.addEventListener("click", () => {
+        window.gubotTrackEvent("pdf_download", {
+          file_name: link.href.split("/").pop()?.split("?")[0] || "",
+          link_text: link.textContent.trim(),
+          link_url: link.href,
+        });
+      });
+    });
+
     if (window.location.pathname.endsWith("/thank-you.html")) {
       window.gubotTrackEvent("thank_you_view", {
         lead_source: "Thank you page",

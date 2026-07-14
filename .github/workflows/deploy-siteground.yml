@@ -49,6 +49,9 @@ jobs:
           mkdir -p .deploy/catalog
           rsync -a catalog/ .deploy/catalog/
 
+          mkdir -p .deploy/downloads
+          cp downloads/*.pdf .deploy/downloads/
+
       - name: Sync files to SiteGround public_html
         run: |
           rsync -az \

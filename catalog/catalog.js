@@ -15,6 +15,7 @@
       introEyebrow: "GUBOT · 汽车涂装设备",
       introTitle: "2026 喷烤漆房产品册",
       introSeries: "电加热 · 天然气 · 柴油",
+      downloadPdf: "下载 PDF 产品册",
       coverEyebrow: "GUBOT 汽车涂装设备｜2026 产品目录",
       coverTitle: "GUBOT 喷烤漆房系列",
       coverSubtitle: "专业汽车喷涂与烘干解决方案",
@@ -84,6 +85,7 @@
       introEyebrow: "GUBOT · AUTOMOTIVE REFINISHING SYSTEMS",
       introTitle: "2026 Spray Booth Catalogue",
       introSeries: "Electric · Natural Gas · Diesel",
+      downloadPdf: "Download PDF Catalog",
       coverEyebrow: "GUBOT AUTOMOTIVE REFINISHING SYSTEMS | 2026 CATALOGUE",
       coverTitle: "GUBOT Spray Booth Series",
       coverSubtitle: "Professional solutions for automotive refinishing and curing",
@@ -153,6 +155,7 @@
       introEyebrow: "GUBOT · SYSTÈMES DE CARROSSERIE-PEINTURE",
       introTitle: "Catalogue cabines de peinture 2026",
       introSeries: "Électrique · Gaz naturel · Diesel",
+      downloadPdf: "Télécharger le PDF",
       coverEyebrow: "GUBOT SYSTÈMES DE CARROSSERIE-PEINTURE | CATALOGUE 2026",
       coverTitle: "Gamme de cabines de peinture GUBOT",
       coverSubtitle: "Solutions professionnelles de pulvérisation et d’étuvage automobile",
@@ -222,6 +225,7 @@
       introEyebrow: "GUBOT · SISTEMAS DE REPINTADO AUTOMOTRIZ",
       introTitle: "Catálogo de cabinas de pintura 2026",
       introSeries: "Eléctrica · Gas natural · Diésel",
+      downloadPdf: "Descargar catálogo PDF",
       coverEyebrow: "GUBOT SISTEMAS DE REPINTADO AUTOMOTRIZ | CATÁLOGO 2026",
       coverTitle: "Gama de cabinas de pintura GUBOT",
       coverSubtitle: "Soluciones profesionales para pintura y secado de vehículos",
@@ -291,6 +295,7 @@
       introEyebrow: "GUBOT · SISTEMI DI VERNICIATURA AUTOMOTIVE",
       introTitle: "Catalogo cabine di verniciatura 2026",
       introSeries: "Elettrico · Gas naturale · Diesel",
+      downloadPdf: "Scarica il catalogo PDF",
       coverEyebrow: "GUBOT SISTEMI DI VERNICIATURA AUTOMOTIVE | CATALOGO 2026",
       coverTitle: "Gamma cabine di verniciatura GUBOT",
       coverSubtitle: "Soluzioni professionali per la verniciatura e l’essiccazione dei veicoli",
@@ -360,6 +365,7 @@
       introEyebrow: "GUBOT · PROFESSIONELLE FAHRZEUGLACKIERTECHNIK",
       introTitle: "Lackierkabinen-Katalog 2026",
       introSeries: "Elektro · Erdgas · Diesel",
+      downloadPdf: "PDF-Katalog herunterladen",
       coverEyebrow: "GUBOT PROFESSIONELLE FAHRZEUGLACKIERTECHNIK | KATALOG 2026",
       coverTitle: "GUBOT Lackier- und Trockenkabinen",
       coverSubtitle: "Professionelle Lösungen für Fahrzeuglackierung und -trocknung",
@@ -615,6 +621,7 @@
   var nextButton = document.getElementById("catalogNext");
   var counter = document.getElementById("catalogCounter");
   var languageSelect = document.getElementById("catalogLanguage");
+  var downloadLabel = document.getElementById("catalogDownloadLabel");
   var detailsDialog = document.getElementById("catalogDetailsDialog");
   var detailsEyebrow = document.getElementById("catalogDetailsEyebrow");
   var detailsTitle = document.getElementById("catalogDetailsTitle");
@@ -866,6 +873,7 @@
     if (introEyebrow) introEyebrow.textContent = c.introEyebrow;
     if (introTitle) introTitle.textContent = c.introTitle;
     if (introSeries) introSeries.textContent = c.introSeries;
+    if (downloadLabel) downloadLabel.textContent = c.downloadPdf;
     if (languageLabel) languageLabel.innerHTML = '<i class="fa-solid fa-globe" aria-hidden="true"></i> ' + escapeHtml(c.language);
     previousButton.querySelector("span").textContent = c.previous;
     nextButton.querySelector("span").textContent = c.next;

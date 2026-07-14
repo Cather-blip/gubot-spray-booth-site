@@ -39,7 +39,7 @@
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
     <link rel="stylesheet" href="../styles.css?v=performance-20260701">
-    <link rel="stylesheet" href="catalog.css?v=digital-catalog-20260712-5">
+    <link rel="stylesheet" href="catalog.css?v=pdf-download-20260714">
 
     <script type="application/ld+json">
       {
@@ -119,20 +119,32 @@
           <p class="catalog-intro__series">Electric <span aria-hidden="true">·</span> Natural Gas <span aria-hidden="true">·</span> Diesel</p>
         </div>
 
-        <label class="catalog-language" for="catalogLanguage">
-          <span class="catalog-language__label"><i class="fa-solid fa-globe" aria-hidden="true"></i> Language</span>
-          <span class="catalog-language__select-wrap">
-            <select id="catalogLanguage" name="catalog-language" aria-label="Catalog language">
-              <option value="en">English</option>
-              <option value="zh">中文</option>
-              <option value="fr">Français</option>
-              <option value="es">Español</option>
-              <option value="it">Italiano</option>
-              <option value="de">Deutsch</option>
-            </select>
-            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-          </span>
-        </label>
+        <div class="catalog-intro__actions">
+          <a
+            class="catalog-download"
+            href="../downloads/GUBOT-Automotive-Spray-Booth-Catalog-2026.pdf"
+            download="GUBOT-Automotive-Spray-Booth-Catalog-2026.pdf"
+            data-track="catalog-pdf-download"
+          >
+            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+            <span id="catalogDownloadLabel">Download PDF Catalog</span>
+          </a>
+
+          <label class="catalog-language" for="catalogLanguage">
+            <span class="catalog-language__label"><i class="fa-solid fa-globe" aria-hidden="true"></i> Language</span>
+            <span class="catalog-language__select-wrap">
+              <select id="catalogLanguage" name="catalog-language" aria-label="Catalog language">
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+                <option value="fr">Français</option>
+                <option value="es">Español</option>
+                <option value="it">Italiano</option>
+                <option value="de">Deutsch</option>
+              </select>
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </span>
+          </label>
+        </div>
       </section>
 
       <section class="catalog-viewer" aria-label="Digital spray booth catalog">
@@ -244,9 +256,9 @@
       <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
     </a>
 
-    <script src="../assets/tracking.js?v=conversion-events-20260701" defer></script>
+    <script src="../assets/tracking.js?v=pdf-download-20260714" defer></script>
     <script src="specifications.js?v=20260714-nine-model-configs" defer></script>
-    <script src="catalog.js?v=digital-catalog-20260714-configs" defer></script>
+    <script src="catalog.js?v=pdf-download-20260714" defer></script>
     <script src="../script.js?v=seo-fix-20260701" defer></script>
   </body>
 </html>
