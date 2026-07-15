@@ -4,6 +4,14 @@
   var TOTAL_PAGES = 13;
   var TURN_DURATION = 620;
   var supportedLocales = ["zh", "en", "fr", "es", "it", "de"];
+  var pdfDownloads = {
+    en: "../downloads/GUBOT-Automotive-Spray-Booth-Catalog-2026.pdf",
+    fr: "../downloads/GUBOT-Automotive-Spray-Booth-Catalog-2026-FR.pdf",
+    es: "../downloads/GUBOT-Automotive-Spray-Booth-Catalog-2026-ES.pdf",
+    zh: "../downloads/GUBOT-Automotive-Spray-Booth-Catalog-2026-ZH.pdf",
+    it: "../downloads/GUBOT-Automotive-Spray-Booth-Catalog-2026-IT.pdf",
+    de: "../downloads/GUBOT-Automotive-Spray-Booth-Catalog-2026-DE.pdf"
+  };
 
   var copy = {
     zh: {
@@ -621,6 +629,7 @@
   var nextButton = document.getElementById("catalogNext");
   var counter = document.getElementById("catalogCounter");
   var languageSelect = document.getElementById("catalogLanguage");
+  var downloadLink = document.getElementById("catalogPdfDownload");
   var downloadLabel = document.getElementById("catalogDownloadLabel");
   var detailsDialog = document.getElementById("catalogDetailsDialog");
   var detailsEyebrow = document.getElementById("catalogDetailsEyebrow");
@@ -629,7 +638,7 @@
   var detailsBody = document.getElementById("catalogDetailsBody");
   var detailsFootnote = document.getElementById("catalogDetailsFootnote");
   var detailsCloseButton = document.getElementById("catalogDetailsClose");
-  if (!book || !previousButton || !nextButton || !counter || !languageSelect || !detailsDialog || !detailsEyebrow || !detailsTitle || !detailsSummary || !detailsBody || !detailsFootnote || !detailsCloseButton) return;
+  if (!book || !previousButton || !nextButton || !counter || !languageSelect || !downloadLink || !detailsDialog || !detailsEyebrow || !detailsTitle || !detailsSummary || !detailsBody || !detailsFootnote || !detailsCloseButton) return;
 
   var specificationModels = (window.GubotCatalogSpecifications && window.GubotCatalogSpecifications.models) || {};
   var detailsOpener = null;
@@ -874,6 +883,10 @@
     if (introTitle) introTitle.textContent = c.introTitle;
     if (introSeries) introSeries.textContent = c.introSeries;
     if (downloadLabel) downloadLabel.textContent = c.downloadPdf;
+    var pdfUrl = pdfDownloads[locale] || pdfDownloads.en;
+    downloadLink.href = pdfUrl;
+    downloadLink.setAttribute("download", pdfUrl.split("/").pop());
+    downloadLink.setAttribute("hreflang", c.htmlLang);
     if (languageLabel) languageLabel.innerHTML = '<i class="fa-solid fa-globe" aria-hidden="true"></i> ' + escapeHtml(c.language);
     previousButton.querySelector("span").textContent = c.previous;
     nextButton.querySelector("span").textContent = c.next;
