@@ -150,6 +150,19 @@ if (productModelSelect) {
   window.addEventListener("hashchange", syncProductModelSelect);
 }
 
+const requestedModel = new URLSearchParams(window.location.search).get("model");
+const quoteSolutionSelect = document.querySelector('select[name="solution"]');
+
+if (requestedModel && quoteSolutionSelect) {
+  const matchingModel = Array.from(quoteSolutionSelect.options).find(
+    (option) => option.value === requestedModel || option.textContent.trim() === requestedModel
+  );
+
+  if (matchingModel) {
+    quoteSolutionSelect.value = matchingModel.value;
+  }
+}
+
 if (menuToggle && nav) {
   menuToggle.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("is-open");

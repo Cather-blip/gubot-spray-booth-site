@@ -498,16 +498,6 @@ body {
 
 #products,
 #product-catalog,
-#tlsj-8001,
-#tlsj-8002,
-#tlsj-8003,
-#tlsj-8004,
-#tlsj-8005,
-#tlsj-8006,
-#tlsj-8007,
-#tlsj-8008,
-#tlsj-8009,
-#tlsj-8010,
 #aurora-e600p,
 #standard-spray-booth,
 #compact-paint-booth,
@@ -528,16 +518,7 @@ body {
   scroll-margin-top: 96px;
 }
 
-#tlsj-8001,
-#tlsj-8002,
-#tlsj-8003,
-#tlsj-8004,
-#tlsj-8005,
-#tlsj-8006,
-#tlsj-8007,
-#tlsj-8008,
-#tlsj-8009,
-#tlsj-8010 {
+.catalog-grid--detailed .catalog-card {
   scroll-margin-top: 178px;
 }
 
@@ -1526,6 +1507,14 @@ body {
   text-transform: uppercase;
 }
 
+.difference-note {
+  display: block;
+  margin-top: 10px;
+  color: var(--core-red);
+  font-size: 13px;
+  font-weight: 850;
+}
+
 .product-spec-table {
   display: grid;
   margin: 0;
@@ -1574,6 +1563,15 @@ body {
 }
 
 .product-spec-table .spec-core dd {
+  color: var(--core-red);
+  font-weight: 850;
+}
+
+.spec-table--models strong {
+  font-weight: 750;
+}
+
+.spec-difference {
   color: var(--core-red);
   font-weight: 850;
 }
