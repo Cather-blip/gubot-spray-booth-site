@@ -1,5 +1,6 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  RewriteRule ^two-post-lift-jtl-4000bm\.html$ /two-post-lift-gbt-l-4000bm.html [R=301,L]
 
   RewriteCond %{HTTPS} !=on [OR]
   RewriteCond %{HTTP_HOST} !^www\.gubotspraybooth\.com$ [NC]
