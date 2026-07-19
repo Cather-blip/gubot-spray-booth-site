@@ -287,3 +287,50 @@ const startProjectCaseAutoSwitch = () => {
 };
 
 startProjectCaseAutoSwitch();
+
+const productCategoryButtons = Array.from(document.querySelectorAll("[data-category-filter]"));
+const productCategoryCards = Array.from(document.querySelectorAll("[data-product-category]"));
+const productCategoryHeading = document.querySelector("#product-category-heading");
+const productCategoryNames = {
+  electric: "Electric spray booth models",
+  diesel: "Diesel spray booth models",
+  "natural-gas": "Natural gas spray booth models",
+  lifts: "Vehicle lifts",
+  compressors: "Air compressors",
+  accessories: "Other body shop accessories"
+};
+
+const activateProductCategory = (category, updateAddress = true) => {
+  if (!productCategoryNames[category]) {
+    return;
+  }
+
+  productCategoryButtons.forEach((button) => {
+    const isActive = button.dataset.categoryFilter === category;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+
+  productCategoryCards.forEach((card) => {
+    card.hidden = card.dataset.productCategory !== category;
+  });
+
+  if (productCategoryHeading) {
+    productCategoryHeading.textContent = productCategoryNames[category];
+  }
+
+  if (updateAddress && window.history?.replaceState) {
+    window.history.replaceState(null, "", `#category-${category}`);
+  }
+};
+
+if (productCategoryButtons.length && productCategoryCards.length) {
+  productCategoryButtons.forEach((button) => {
+    button.addEventListener("click", () => activateProductCategory(button.dataset.categoryFilter));
+  });
+
+  const requestedCategory = window.location.hash.startsWith("#category-")
+    ? window.location.hash.replace("#category-", "")
+    : "electric";
+  activateProductCategory(productCategoryNames[requestedCategory] ? requestedCategory : "electric", false);
+}

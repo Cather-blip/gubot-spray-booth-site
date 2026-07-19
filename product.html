@@ -99,19 +99,19 @@
             <aside class="product-category-sidebar" aria-label="Product categories">
               <p class="product-category-sidebar__title">Product Categories</p>
               <nav class="product-category-sidebar__nav">
-                <a href="#gbt-sb6900-e-eco"><span>Electric Spray Booths</span><small>3 models</small></a>
-                <a href="#gbt-sb6900-d-eco"><span>Diesel Spray Booths</span><small>3 models</small></a>
-                <a href="#gbt-sb6900-ng-eco"><span>Natural Gas Spray Booths</span><small>3 models</small></a>
-                <a href="two-post-lift-gbt-l-4000bm.html"><span>Vehicle Lifts</span><small>View products</small></a>
-                <a href="accessories.html#air-compressors"><span>Air Compressors</span><small>Request models</small></a>
-                <a href="accessories.html"><span>Other Accessories</span><small>View catalog</small></a>
+                <button class="is-active" type="button" data-category-filter="electric" aria-pressed="true"><span>Electric Spray Booths</span><small>3 models</small></button>
+                <button type="button" data-category-filter="diesel" aria-pressed="false"><span>Diesel Spray Booths</span><small>3 models</small></button>
+                <button type="button" data-category-filter="natural-gas" aria-pressed="false"><span>Natural Gas Spray Booths</span><small>3 models</small></button>
+                <button type="button" data-category-filter="lifts" aria-pressed="false"><span>Vehicle Lifts</span><small>1 model</small></button>
+                <button type="button" data-category-filter="compressors" aria-pressed="false"><span>Air Compressors</span><small>Product entry</small></button>
+                <button type="button" data-category-filter="accessories" aria-pressed="false"><span>Other Accessories</span><small>Product catalog</small></button>
               </nav>
             </aside>
             <div class="product-catalog-main">
           <div class="section-heading section-heading--split">
             <div>
               <p class="eyebrow">Product Catalog</p>
-              <h2>Automotive spray booth model list</h2>
+              <h2 id="product-category-heading" aria-live="polite">Electric spray booth models</h2>
             </div>
             <p>
               Choose a category on the left, then open a product card for specifications,
@@ -119,7 +119,7 @@
             </p>
           </div>
           <div class="catalog-grid catalog-grid--wide catalog-grid--detailed">
-            <article class="catalog-card catalog-card--featured" id="gbt-sb6900-e-eco">
+            <article class="catalog-card catalog-card--featured" id="gbt-sb6900-e-eco" data-product-category="electric">
               <div class="machine-shot"><img loading="lazy" decoding="async" src="assets/products/gubot-sb6900-automotive-spray-booth-series.webp?v=sb6900-products-20260719" alt="Gubot GBT-SB6900-E-ECO electric heating automotive spray booth"></div>
               <div class="catalog-card__body">
                 <span class="catalog-card__status">GBT-SB6900-E-ECO</span>
@@ -146,7 +146,7 @@
               </div>
             </article>
 
-            <article class="catalog-card" id="gbt-sb6900-e-plus">
+            <article class="catalog-card" id="gbt-sb6900-e-plus" data-product-category="electric">
               <div class="machine-shot"><img loading="lazy" decoding="async" src="assets/products/gubot-sb6900-automotive-spray-booth-series.webp?v=sb6900-products-20260719" alt="Gubot GBT-SB6900-E-PLUS electric heating automotive spray booth"></div>
               <div class="catalog-card__body">
                 <span class="catalog-card__status">GBT-SB6900-E-PLUS</span>
@@ -173,7 +173,7 @@
               </div>
             </article>
 
-            <article class="catalog-card" id="gbt-sb6900-e-pro">
+            <article class="catalog-card" id="gbt-sb6900-e-pro" data-product-category="electric">
               <div class="machine-shot"><img loading="lazy" decoding="async" src="assets/products/gubot-sb6900-automotive-spray-booth-series.webp?v=sb6900-products-20260719" alt="Gubot GBT-SB6900-E-PRO electric heating professional automotive spray booth"></div>
               <div class="catalog-card__body">
                 <span class="catalog-card__status">GBT-SB6900-E-PRO</span>
@@ -200,7 +200,7 @@
               </div>
             </article>
 
-            <article class="catalog-card" id="gbt-sb6900-ng-eco">
+            <article class="catalog-card" id="gbt-sb6900-ng-eco" data-product-category="natural-gas">
               <div class="machine-shot"><img loading="lazy" decoding="async" src="assets/products/gubot-sb6900-automotive-spray-booth-series.webp?v=sb6900-products-20260719" alt="Gubot GBT-SB6900-NG-ECO natural gas heating automotive spray booth"></div>
               <div class="catalog-card__body">
                 <span class="catalog-card__status">GBT-SB6900-NG-ECO</span>
@@ -227,7 +227,7 @@
               </div>
             </article>
 
-            <article class="catalog-card" id="gbt-sb6900-ng-plus">
+            <article class="catalog-card" id="gbt-sb6900-ng-plus" data-product-category="natural-gas">
               <div class="machine-shot"><img loading="lazy" decoding="async" src="assets/products/gubot-sb6900-automotive-spray-booth-series.webp?v=sb6900-products-20260719" alt="Gubot GBT-SB6900-NG-PLUS natural gas heating automotive spray booth"></div>
               <div class="catalog-card__body">
                 <span class="catalog-card__status">GBT-SB6900-NG-PLUS</span>
@@ -254,7 +254,7 @@
               </div>
             </article>
 
-            <article class="catalog-card" id="gbt-sb6900-ng-pro">
+            <article class="catalog-card" id="gbt-sb6900-ng-pro" data-product-category="natural-gas">
               <div class="machine-shot"><img loading="lazy" decoding="async" src="assets/products/gubot-sb6900-automotive-spray-booth-series.webp?v=sb6900-products-20260719" alt="Gubot GBT-SB6900-NG-PRO natural gas professional automotive spray booth"></div>
               <div class="catalog-card__body">
                 <span class="catalog-card__status">GBT-SB6900-NG-PRO</span>
@@ -281,7 +281,7 @@
               </div>
             </article>
 
-            <article class="catalog-card" id="gbt-sb6900-d-eco">
+            <article class="catalog-card" id="gbt-sb6900-d-eco" data-product-category="diesel">
               <div class="machine-shot"><img loading="lazy" decoding="async" src="assets/products/gubot-sb6900-automotive-spray-booth-series.webp?v=sb6900-products-20260719" alt="Gubot GBT-SB6900-D-ECO diesel heating automotive spray booth"></div>
               <div class="catalog-card__body">
                 <span class="catalog-card__status">GBT-SB6900-D-ECO</span>
@@ -308,7 +308,7 @@
               </div>
             </article>
 
-            <article class="catalog-card" id="gbt-sb6900-d-plus">
+            <article class="catalog-card" id="gbt-sb6900-d-plus" data-product-category="diesel">
               <div class="machine-shot"><img loading="lazy" decoding="async" src="assets/products/gubot-sb6900-automotive-spray-booth-series.webp?v=sb6900-products-20260719" alt="Gubot GBT-SB6900-D-PLUS diesel heating automotive spray booth"></div>
               <div class="catalog-card__body">
                 <span class="catalog-card__status">GBT-SB6900-D-PLUS</span>
@@ -335,7 +335,7 @@
               </div>
             </article>
 
-            <article class="catalog-card" id="gbt-sb6900-d-pro">
+            <article class="catalog-card" id="gbt-sb6900-d-pro" data-product-category="diesel">
               <div class="machine-shot"><img loading="lazy" decoding="async" src="assets/products/gubot-sb6900-automotive-spray-booth-series.webp?v=sb6900-products-20260719" alt="Gubot GBT-SB6900-D-PRO diesel heating professional automotive spray booth"></div>
               <div class="catalog-card__body">
                 <span class="catalog-card__status">GBT-SB6900-D-PRO</span>
@@ -360,6 +360,18 @@
                 </dl></div>
                 <a class="catalog-card__link" href="contact.html?model=GBT-SB6900-D-PRO">Request quote</a>
               </div>
+            </article>
+            <article class="catalog-card" data-product-category="lifts" hidden>
+              <div class="machine-shot"><img loading="lazy" decoding="async" src="assets/accessories/gbt-l-4000bm-two-post-lift-main.webp" alt="GBT-L-4000BM blue 4000 kg two post vehicle lift"></div>
+              <div class="catalog-card__body"><span class="catalog-card__status">GBT-L-4000BM</span><h3>4 Ton Two-Post Vehicle Lift</h3><p>4,000 kg capacity, 110–1,850 mm lifting range, 2.2 kW motor, and dual-point lock release.</p><a class="catalog-card__link" href="two-post-lift-gbt-l-4000bm.html">View lift details</a></div>
+            </article>
+            <article class="catalog-card" data-product-category="compressors" hidden>
+              <div class="machine-shot product-category-placeholder"><span>Air<br>Compressor</span></div>
+              <div class="catalog-card__body"><span class="catalog-card__status">Workshop Air</span><h3>Air Compressors</h3><p>Air compressor models can be selected according to tank capacity, air delivery, voltage, and workshop demand.</p><a class="catalog-card__link" href="accessories.html#air-compressors">Request compressor models</a></div>
+            </article>
+            <article class="catalog-card" data-product-category="accessories" hidden>
+              <div class="machine-shot product-category-placeholder"><span>Body Shop<br>Accessories</span></div>
+              <div class="catalog-card__body"><span class="catalog-card__status">Complete Workshop</span><h3>Paint Stands and Other Accessories</h3><p>Browse bumper stands, panel stands, masking trolleys, rotating parts stands, and related body shop tools.</p><a class="catalog-card__link" href="accessories.html">View accessories catalog</a></div>
             </article>
           </div>
             </div>
@@ -470,6 +482,6 @@
       <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
     </a>
     <script src="assets/tracking.js?v=conversion-events-20260701" defer></script>
-    <script src="script.js?v=seo-fix-20260701"></script>
+    <script src="script.js?v=product-filter-20260719"></script>
   </body>
 </html>
