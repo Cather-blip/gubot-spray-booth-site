@@ -31,7 +31,18 @@ $name = clean_field('name', 160);
 $company = clean_field('company', 180);
 $contact = clean_field('contact', 220);
 $country = clean_field('country', 120);
+$installationCountry = clean_field('installation_country', 120);
+$deliveryCity = clean_field('delivery_city', 180);
 $solution = clean_field('solution', 160);
+$vehicleType = clean_field('vehicle_type', 160);
+$vehicleLength = clean_field('vehicle_length', 60);
+$vehicleWidth = clean_field('vehicle_width', 60);
+$vehicleHeight = clean_field('vehicle_height', 60);
+$voltage = clean_field('voltage', 60);
+$phases = clean_field('phases', 60);
+$frequency = clean_field('frequency', 60);
+$purchaseTimeline = clean_field('purchase_timeline', 120);
+$accessories = clean_field('accessories', 300);
 $message = clean_field('message', 3000);
 $formSource = clean_field('form_source', 120);
 $pageUrl = clean_field('page_url', 300);
@@ -52,7 +63,14 @@ $lines = [
     'Company / Workshop: ' . $company,
     'Email / Phone: ' . $contact,
     'Country: ' . $country,
+    'Installation country: ' . $installationCountry,
+    'Delivery city / port: ' . $deliveryCity,
     'Interested solution: ' . $solution,
+    'Vehicle type: ' . $vehicleType,
+    'Maximum vehicle size (L × W × H): ' . $vehicleLength . ' × ' . $vehicleWidth . ' × ' . $vehicleHeight,
+    'Power supply: ' . $voltage . ' / ' . $phases . ' / ' . $frequency,
+    'Purchase timeline: ' . $purchaseTimeline,
+    'Additional equipment: ' . $accessories,
     'Form source: ' . $formSource,
     'Page URL: ' . $pageUrl,
     'Visitor IP: ' . ($_SERVER['REMOTE_ADDR'] ?? ''),

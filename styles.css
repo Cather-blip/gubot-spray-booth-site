@@ -3265,6 +3265,31 @@ body {
   line-height: 1.45;
 }
 
+.quote-form fieldset {
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid rgba(15, 51, 74, 0.18);
+  border-radius: 10px;
+}
+
+.quote-form legend {
+  padding: 0 6px;
+  font-weight: 700;
+}
+
+.quote-form fieldset label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.quote-form fieldset input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
 .quote-form textarea {
   min-height: 110px;
   resize: vertical;
