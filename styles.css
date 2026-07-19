@@ -1802,6 +1802,10 @@ body {
   display: none;
 }
 
+.product-catalog-main [data-product-category][hidden] {
+  display: none !important;
+}
+
 .product-catalog-main .section-heading--split {
   grid-template-columns: 1fr;
   gap: 12px;
