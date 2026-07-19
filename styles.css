@@ -581,6 +581,12 @@ body {
   border-radius: 6px;
 }
 
+.inner-hero__media--contain img {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
 .button--dark {
   color: var(--ink);
   border-color: #b8c8d2;
