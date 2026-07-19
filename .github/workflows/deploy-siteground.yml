@@ -49,6 +49,17 @@ jobs:
           mkdir -p .deploy/catalog
           rsync -a catalog/ .deploy/catalog/
 
+          for page_dir in products fr es uk; do
+            if [ -d "$page_dir" ]; then
+              mkdir -p ".deploy/$page_dir"
+              rsync -a \
+                --include="*/" \
+                --include="*.html" \
+                --exclude="*" \
+                "$page_dir/" ".deploy/$page_dir/"
+            fi
+          done
+
           mkdir -p .deploy/downloads
           cp downloads/*.pdf .deploy/downloads/
 
